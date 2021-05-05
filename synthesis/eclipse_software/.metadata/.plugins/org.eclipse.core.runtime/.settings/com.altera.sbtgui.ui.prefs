@@ -1,6 +1,6 @@
 eclipse.preferences.version=1
-newBspWizardPage.defaultLocation=/home/daniel/Documents/GitHub/multiplication_nios2_accelerator/synthesis/qsys/software/nios_handshake_memory
-newBspWizardPage.sopcinfoFile=/home/daniel/Documents/GitHub/multiplication_nios2_accelerator/synthesis/qsys/processador_com_acelerador.sopcinfo
-newSoftwareExampleWizardPage.defaultLocation=/home/daniel/Documents/GitHub/multiplication_nios2_accelerator/synthesis/qsys/software/nios_handshake_memory
-newSoftwareExampleWizardPage.sopcinfoFile=/home/daniel/Documents/GitHub/multiplication_nios2_accelerator/synthesis/qsys/processador_com_acelerador.sopcinfo
-newSoftwareExampleWizardPage2.newBspLocation=/home/daniel/Documents/GitHub/multiplication_nios2_accelerator/synthesis/qsys/software/nios_handshake_memory_bsp
+newBspWizardPage.defaultLocation=C\:\\Users\\danie\\Documents\\GitHub\\multiplication_nios2_accelerator\\synthesis\\qsys\\software\\nios_handshake
+newBspWizardPage.sopcinfoFile=C\:\\Users\\danie\\Documents\\GitHub\\multiplication_nios2_accelerator\\synthesis\\qsys\\processador_com_acelerador.sopcinfo
+newSoftwareExampleWizardPage.defaultLocation=C\:\\Users\\danie\\Documents\\GitHub\\multiplication_nios2_accelerator\\synthesis\\qsys\\software\\nios_handshake_eclipse
+newSoftwareExampleWizardPage.sopcinfoFile=C\:\\Users\\danie\\Documents\\GitHub\\multiplication_nios2_accelerator\\synthesis\\qsys\\nios_handshake.sopcinfo
+newSoftwareExampleWizardPage2.newBspLocation=C\:\\Users\\danie\\Documents\\GitHub\\multiplication_nios2_accelerator\\synthesis\\qsys\\software\\nios_handshake_eclipse_bsp

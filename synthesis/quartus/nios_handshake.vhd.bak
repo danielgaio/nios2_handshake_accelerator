@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity nios_handshake is
+
+	generic
+	(
+		DATA_WIDTH : natural := 8
+	);
+
+	port 
+	(
+		OSC_CLK, RESET_N : in std_logic
+	);
+
+end entity;
+
+architecture rtl of unsigned_adder is
+begin
+
+	result <= a + b;
+
+end rtl;

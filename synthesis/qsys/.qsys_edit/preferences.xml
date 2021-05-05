@@ -3,17 +3,20 @@
  <debug showDebugMenu="0" />
  <systemtable filter="All Interfaces">
   <columns>
-   <connections preferredWidth="159" />
+   <connections preferredWidth="127" />
    <irq preferredWidth="34" />
+   <name preferredWidth="189" />
   </columns>
  </systemtable>
  <library
-   expandedCategories="Library/Basic Functions/Bridges and Adaptors/Streaming,Library/Processors and Peripherals,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/Interface Protocols,Library/Processors and Peripherals/Peripherals,Library/Basic Functions/Bridges and Adaptors,Library/Basic Functions/Simulation; Debug and Verification/Simulation,Project,Library/Interface Protocols/Serial,Library/Qsys Interconnect,Library/Basic Functions,Library/Qsys Interconnect/Memory-Mapped,Library,Library/Basic Functions/Simulation; Debug and Verification" />
- <window width="1920" height="1048" x="0" y="1112" />
- <generation
-   synthesis="VHDL"
-   simulation="VHDL"
-   greybox="1"
-   testbench_simulation="VHDL" />
- <hdlexample language="VHDL" />
+   expandedCategories="Library/Interface Protocols/Serial,Library,Library/Interface Protocols,Project" />
+ <window width="1938" height="1048" x="-9" y="-9" />
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="355" />
+   <clocksource preferredWidth="355" />
+   <frequency preferredWidth="335" />
+  </columns>
+ </clocktable>
+ <generation synthesis="VHDL" />
 </preferences>
