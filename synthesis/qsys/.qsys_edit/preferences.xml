@@ -5,11 +5,11 @@
   <columns>
    <connections preferredWidth="127" />
    <irq preferredWidth="34" />
-   <name preferredWidth="189" />
+   <name preferredWidth="338" />
+   <description preferredWidth="339" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library/Interface Protocols/Serial,Library,Library/Interface Protocols,Project" />
+ <library expandedCategories="Project,Library" />
  <window width="1938" height="1048" x="-9" y="-9" />
  <clocktable>
   <columns>

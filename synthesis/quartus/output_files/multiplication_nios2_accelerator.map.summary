@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Wed May 05 11:51:06 2021
-Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Analysis & Synthesis Status : Successful - Wed May 05 14:09:35 2021
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : multiplication_nios2_accelerator
 Top-level Entity Name : nios_handshake_top
 Family : Cyclone IV E
-Total logic elements : 1,640
-    Total combinational functions : 1,461
-    Dedicated logic registers : 887
-Total registers : 887
+Total logic elements : 1,643
+    Total combinational functions : 1,470
+    Dedicated logic registers : 874
+Total registers : 874
 Total pins : 2
 Total virtual pins : 0
 Total memory bits : 44,032

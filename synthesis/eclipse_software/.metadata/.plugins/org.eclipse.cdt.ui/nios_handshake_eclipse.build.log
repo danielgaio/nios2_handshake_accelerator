@@ -1,26 +1,21 @@
-
-**** Build of configuration Nios II for project nios_handshake_eclipse ****
-
+15:44:46 **** Incremental Build of configuration Nios II for project nios_handshake_eclipse ****
 make all 
-      8 [main] sh 2740 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
-the public mailing list cygwin@cygwin.com
-      9 [main] sh 4668 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
-the public mailing list cygwin@cygwin.com
-      8 [main] echo 6652 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
 Info: Building ../nios_handshake_eclipse_bsp/
-the public mailing list cygwin@cygwin.com
-make --no-print-directory -C ../nios_handshake_eclipse_bsp/
-     10 [main] pwd 8492 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
-the public mailing list cygwin@cygwin.com
-      8 [main] sh 2384 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
-the public mailing list cygwin@cygwin.com
-      7 [main] sh 8136 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
-the public mailing list cygwin@cygwin.com
-[BSP build complete]
-     25 [main] true 7272 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
-the public mailing list cygwin@cygwin.com
-      8 [main] sh 4804 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
-the public mailing list cygwin@cygwin.com
-[nios_handshake_eclipse build complete]
+C:/intelFPGA_lite/16.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios_handshake_eclipse_bsp/
+Makefile not up to date.
+C:/Users/danie/Documents/GitHub/multiplication_nios2_accelerator/synthesis/qsys/nios_handshake.sopcinfo has been modified since the BSP was generated.
 
-**** Build Finished ****
+Generate the BSP to update the Makefile, and then build again.
+
+To generate from Eclipse:
+ 1. Right-click the BSP project.
+ 2. In the Nios II Menu, click Generate BSP.
+
+To generate from the command line:
+ nios2-bsp-generate-files --settings=<settings file> --bsp-dir=<target bsp files directory>
+
+make[1]: *** [public.mk] Error 1
+make: *** [../nios_handshake_eclipse_bsp/-recurs-make-lib] Error 2
+
+15:44:49 Build Finished (took 3s.15ms)
+
