@@ -1,15 +1,15 @@
-Info: Starting: Create testbench Platform Designer system
-Info: /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake.ipx
-Info: qsys-generate /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake.qsys --testbench=SIMPLE --output-directory=/home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys --family="Cyclone IV E" --part=EP4CE6E22C8
+Info: Starting: Create testbench Qsys system
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake.ipx
+Info: qsys-generate C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus\qsys\nios_handshake.qsys --testbench=SIMPLE --output-directory=C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus\qsys --family="Cyclone IV E" --part=EP4CE6E22C8
 Progress: Loading qsys/nios_handshake.qsys
 Progress: Reading input file
-Progress: Adding clk_0 [clock_source 20.1]
+Progress: Adding clk_0 [clock_source 16.1]
 Progress: Parameterizing module clk_0
-Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 20.1]
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.1]
 Progress: Parameterizing module jtag_uart_0
-Progress: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 16.1]
 Progress: Parameterizing module nios2_gen2_0
-Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 20.1]
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
 Progress: Parameterizing module onchip_memory2_0
 Progress: Building connections
 Progress: Parameterizing connections
@@ -21,40 +21,43 @@ Info: Loading IP catalog for testbench.
 Progress: 
 Progress: 
 Progress: 
-Progress: (2) searching /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/root_components.ipx (ipx file)
-Info: Reading index /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/root_components.ipx
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/root_components.ipx: Loading now from components.ipx
-Info: Reading index /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/ip_component_categories.ipx
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/ip_component_categories.ipx described 0 plugins, 0 paths, in 0.00 seconds
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0.00 seconds
-Info: /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ip/**/* matched 0 files in 0.00 seconds
-Info: Reading index /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake.ipx
+Progress: (2) searching C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index C:\intelfpga_lite\16.1\quartus\sopc_builder\bin\root_components.ipx
+Info: C:\intelfpga_lite\16.1\quartus\sopc_builder\bin\root_components.ipx: Loading now from components.ipx
+Info: Reading index C:\intelfpga_lite\16.1\quartus\sopc_builder\bin\ip_component_categories.ipx
+Info: C:\intelfpga_lite\16.1\quartus\sopc_builder\bin\ip_component_categories.ipx described 0 plugins, 0 paths, in 0,01 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0,01 seconds
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ip/**/* matched 0 files in 0,00 seconds
+Info: Reading index C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus\qsys\nios_handshake\testbench\nios_handshake.ipx
 Progress: Loading qsys/nios_handshake.qsys
-Info: /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/* matched 4 files in 0.00 seconds
-Info: /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/ip/**/* matched 0 files in 0.00 seconds
-Info: /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/*/* matched 10 files in 0.00 seconds
-Info: /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake.ipx described 0 plugins, 3 paths, in 0.00 seconds
-Info: /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/* matched 4 files in 0.00 seconds
-Info: /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/*/* matched 0 files in 0.00 seconds
-Info: /home/daniel/.altera.quartus/ip/20.1/**/* matched 0 files in 0.00 seconds
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0.00 seconds
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0.00 seconds
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0.00 seconds
-Info: Reading index /home/daniel/intelFPGA_lite/20.1/ip/altera/altera_components.ipx
-Info: /home/daniel/intelFPGA_lite/20.1/ip/altera/altera_components.ipx described 1971 plugins, 0 paths, in 0.11 seconds
-Info: /home/daniel/intelFPGA_lite/20.1/ip/**/* matched 109 files in 0.11 seconds
-Info: /home/daniel/intelFPGA_lite/ip/**/* matched 0 files in 0.00 seconds
-Info: Reading index /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/builtin.ipx
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/builtin.ipx described 83 plugins, 0 paths, in 0.01 seconds
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/**/* matched 9 files in 0.01 seconds
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/common/librarian/factories/**/* matched 0 files in 0.00 seconds
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0.00 seconds
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/root_components.ipx described 0 plugins, 13 paths, in 0.12 seconds
-Info: /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0.12 seconds
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/* matched 7 files in 0,00 seconds
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/ip/**/* matched 0 files in 0,00 seconds
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/*/* matched 14 files in 0,00 seconds
+Info: C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus\qsys\nios_handshake\testbench\nios_handshake.ipx described 0 plugins, 3 paths, in 0,02 seconds
+Progress: Loading testbench/nios_handshake_tb.qsys
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/* matched 12 files in 0,02 seconds
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/*/* matched 8 files in 0,00 seconds
+Info: C:/Users/danie/.altera.quartus/ip/16.1/**/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0,00 seconds
+Info: Reading index C:\intelfpga_lite\16.1\ip\altera\altera_components.ipx
+Info: C:\intelfpga_lite\16.1\ip\altera\altera_components.ipx described 1974 plugins, 0 paths, in 0,15 seconds
+Info: C:/intelfpga_lite/16.1/ip/**/* matched 140 files in 0,16 seconds
+Info: C:/intelfpga_lite/ip/**/* matched 0 files in 0,00 seconds
+Info: Reading index C:\intelfpga_lite\16.1\quartus\sopc_builder\builtin.ipx
+Info: C:\intelfpga_lite\16.1\quartus\sopc_builder\builtin.ipx described 83 plugins, 0 paths, in 0,01 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/**/* matched 8 files in 0,01 seconds
+Info: Reading index C:\intelfpga_lite\16.1\quartus\common\librarian\factories\index.ipx
+Info: C:\intelfpga_lite\16.1\quartus\common\librarian\factories\index.ipx described 151 plugins, 0 paths, in 0,01 seconds
+Info: C:/intelfpga_lite/16.1/quartus/common/librarian/factories/**/* matched 4 files in 0,01 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0,00 seconds
+Info: C:\intelfpga_lite\16.1\quartus\sopc_builder\bin\root_components.ipx described 0 plugins, 13 paths, in 0,21 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0,21 seconds
 Progress: 
 Progress: 
 Progress: 
-Info: Running script /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/tbgen.tcl
+Info: Running script C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/tbgen.tcl
 Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
 Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
 Info: get_module_property NAME
@@ -103,8 +106,8 @@ Info: set_instance_parameter_value nios_handshake_inst_reset_bfm ASSERT_HIGH_RES
 Info: set_instance_parameter_value nios_handshake_inst_reset_bfm INITIAL_RESET_CYCLES 50
 Info: get_instance_property nios_handshake_inst_reset_bfm CLASS_NAME
 Info: get_instance_interfaces nios_handshake_inst_reset_bfm
-Info: get_instance_interface_property nios_handshake_inst_reset_bfm clk CLASS_NAME
 Info: get_instance_interface_property nios_handshake_inst_reset_bfm reset CLASS_NAME
+Info: get_instance_interface_property nios_handshake_inst_reset_bfm clk CLASS_NAME
 Info: get_instance_property nios_handshake_inst_reset_bfm CLASS_NAME
 Info: get_instance_interface_parameter_value nios_handshake_inst reset associatedClock
 Info: get_instance_interfaces nios_handshake_inst_clk_bfm
@@ -114,24 +117,24 @@ Warning: TB_Gen: nios_handshake_inst_reset_bfm is not associated to any clock; c
 Info: add_connection nios_handshake_inst_clk_bfm.clk nios_handshake_inst_reset_bfm.clk
 Info: get_instance_interface_property nios_handshake_inst reset CLASS_NAME
 Info: get_instance_interfaces nios_handshake_inst_reset_bfm
-Info: get_instance_interface_property nios_handshake_inst_reset_bfm clk CLASS_NAME
 Info: get_instance_interface_property nios_handshake_inst_reset_bfm reset CLASS_NAME
+Info: get_instance_interface_property nios_handshake_inst_reset_bfm clk CLASS_NAME
 Info: add_connection nios_handshake_inst_reset_bfm.reset nios_handshake_inst.reset
 Info: send_message Info TB_Gen: Saving testbench system: nios_handshake_tb.qsys
 Info: TB_Gen: Saving testbench system: nios_handshake_tb.qsys
 Info: save_system nios_handshake_tb.qsys
 Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
 Info: TB_Gen: TBGEN SUCCESSFUL
-Info: Testbench system: /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake_tb.qsys
+Info: Testbench system: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake_tb.qsys
 Info: Done
-Info: qsys-generate /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake.qsys --simulation=VHDL --allow-mixed-language-simulation --testbench=SIMPLE --testbench-simulation=VHDL --allow-mixed-language-testbench-simulation --output-directory=/home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake_tb/simulation --family="Cyclone IV E" --part=EP4CE6E22C8
+Info: qsys-generate C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus\qsys\nios_handshake.qsys --simulation=VHDL --allow-mixed-language-simulation --testbench=SIMPLE --testbench-simulation=VHDL --allow-mixed-language-testbench-simulation --output-directory=C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus\qsys\nios_handshake\testbench\nios_handshake_tb\simulation --family="Cyclone IV E" --part=EP4CE6E22C8
 Progress: Loading testbench/nios_handshake_tb.qsys
 Progress: Reading input file
 Progress: Adding nios_handshake_inst [nios_handshake 1.0]
 Progress: Parameterizing module nios_handshake_inst
-Progress: Adding nios_handshake_inst_clk_bfm [altera_avalon_clock_source 20.1]
+Progress: Adding nios_handshake_inst_clk_bfm [altera_avalon_clock_source 16.1]
 Progress: Parameterizing module nios_handshake_inst_clk_bfm
-Progress: Adding nios_handshake_inst_reset_bfm [altera_avalon_reset_source 20.1]
+Progress: Adding nios_handshake_inst_reset_bfm [altera_avalon_reset_source 16.1]
 Progress: Parameterizing module nios_handshake_inst_reset_bfm
 Progress: Building connections
 Progress: Parameterizing connections
@@ -140,22 +143,22 @@ Progress: Done reading input file
 Info: nios_handshake_tb.nios_handshake_inst.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: nios_handshake_tb.nios_handshake_inst_clk_bfm: Elaborate: altera_clock_source
 Info: nios_handshake_tb.nios_handshake_inst_clk_bfm:            $Revision: #1 $
-Info: nios_handshake_tb.nios_handshake_inst_clk_bfm:            $Date: 2019/10/06 $
+Info: nios_handshake_tb.nios_handshake_inst_clk_bfm:            $Date: 2016/08/07 $
 Info: nios_handshake_tb.nios_handshake_inst_reset_bfm: Elaborate: altera_reset_source
 Info: nios_handshake_tb.nios_handshake_inst_reset_bfm:            $Revision: #1 $
-Info: nios_handshake_tb.nios_handshake_inst_reset_bfm:            $Date: 2019/10/06 $
+Info: nios_handshake_tb.nios_handshake_inst_reset_bfm:            $Date: 2016/08/07 $
 Info: nios_handshake_tb.nios_handshake_inst_reset_bfm: Reset is negatively asserted.
 Info: nios_handshake_tb: Generating nios_handshake_tb "nios_handshake_tb" for SIM_VHDL
 Info: nios_handshake_inst: "nios_handshake_tb" instantiated nios_handshake "nios_handshake_inst"
 Info: nios_handshake_inst_clk_bfm: "nios_handshake_tb" instantiated altera_avalon_clock_source "nios_handshake_inst_clk_bfm"
 Info: nios_handshake_inst_reset_bfm: "nios_handshake_tb" instantiated altera_avalon_reset_source "nios_handshake_inst_reset_bfm"
 Info: jtag_uart_0: Starting RTL generation for module 'nios_handshake_jtag_uart_0'
-Info: jtag_uart_0:   Generation command is [exec /home/daniel/intelFPGA_lite/20.1/quartus/linux64/perl/bin/perl -I /home/daniel/intelFPGA_lite/20.1/quartus/linux64/perl/lib -I /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/europa -I /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin -I /home/daniel/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/daniel/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/daniel/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_handshake_jtag_uart_0 --dir=/tmp/alt8756_3890379834353901514.dir/0007_jtag_uart_0_gen/ --quartus_dir=/home/daniel/intelFPGA_lite/20.1/quartus --vhdl --config=/tmp/alt8756_3890379834353901514.dir/0007_jtag_uart_0_gen//nios_handshake_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt8756_3890379834353901514.dir/0007_jtag_uart_0_gen/  ]
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_handshake_jtag_uart_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8756_8124458315165212945.dir/0003_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8756_8124458315165212945.dir/0003_jtag_uart_0_gen//nios_handshake_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8756_8124458315165212945.dir/0003_jtag_uart_0_gen/  ]
 Info: jtag_uart_0: Done RTL generation for module 'nios_handshake_jtag_uart_0'
 Info: jtag_uart_0: "nios_handshake_inst" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info: nios2_gen2_0: "nios_handshake_inst" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info: onchip_memory2_0: Starting RTL generation for module 'nios_handshake_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec /home/daniel/intelFPGA_lite/20.1/quartus/linux64/perl/bin/perl -I /home/daniel/intelFPGA_lite/20.1/quartus/linux64/perl/lib -I /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/europa -I /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin -I /home/daniel/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/daniel/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/daniel/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_handshake_onchip_memory2_0 --dir=/tmp/alt8756_3890379834353901514.dir/0008_onchip_memory2_0_gen/ --quartus_dir=/home/daniel/intelFPGA_lite/20.1/quartus --vhdl --config=/tmp/alt8756_3890379834353901514.dir/0008_onchip_memory2_0_gen//nios_handshake_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt8756_3890379834353901514.dir/0008_onchip_memory2_0_gen/  ]
+Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_handshake_onchip_memory2_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8756_8124458315165212945.dir/0004_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8756_8124458315165212945.dir/0004_onchip_memory2_0_gen//nios_handshake_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8756_8124458315165212945.dir/0004_onchip_memory2_0_gen/  ]
 Info: onchip_memory2_0: Done RTL generation for module 'nios_handshake_onchip_memory2_0'
 Info: onchip_memory2_0: "nios_handshake_inst" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
@@ -165,14 +168,20 @@ Info: mm_interconnect_0: "nios_handshake_inst" instantiated altera_mm_interconne
 Info: irq_mapper: "nios_handshake_inst" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "nios_handshake_inst" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'nios_handshake_nios2_gen2_0_cpu'
-Info: cpu:   Generation command is [exec /home/daniel/intelFPGA_lite/20.1/quartus/linux64//perl/bin/perl -I /home/daniel/intelFPGA_lite/20.1/quartus/linux64//perl/lib -I /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin/europa -I /home/daniel/intelFPGA_lite/20.1/quartus/sopc_builder/bin -I /home/daniel/intelFPGA_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/daniel/intelFPGA_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/daniel/intelFPGA_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/daniel/intelFPGA_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/daniel/intelFPGA_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=nios_handshake_nios2_gen2_0_cpu --dir=/tmp/alt8756_3890379834353901514.dir/0011_cpu_gen/ --quartus_bindir=/home/daniel/intelFPGA_lite/20.1/quartus/linux64/ --verilog --config=/tmp/alt8756_3890379834353901514.dir/0011_cpu_gen//nios_handshake_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=/tmp/alt8756_3890379834353901514.dir/0011_cpu_gen/  ]
-Info: cpu: # 2021.05.09 18:16:08 (*) Starting Nios II generation
-Info: cpu: # 2021.05.09 18:16:08 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2021.05.09 18:16:08 (*)   Creating all objects for CPU
-Info: cpu: # 2021.05.09 18:16:08 (*)   Creating '/tmp/alt8756_3890379834353901514.dir/0011_cpu_gen//nios_handshake_nios2_gen2_0_cpu_nios2_waves.do'
-Info: cpu: # 2021.05.09 18:16:08 (*)   Generating RTL from CPU objects
-Info: cpu: # 2021.05.09 18:16:08 (*)   Creating plain-text RTL
-Info: cpu: # 2021.05.09 18:16:09 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/16.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=nios_handshake_nios2_gen2_0_cpu --dir=C:/Users/danie/AppData/Local/Temp/alt8756_8124458315165212945.dir/0007_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/16.1/quartus/bin64/ --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8756_8124458315165212945.dir/0007_cpu_gen//nios_handshake_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8756_8124458315165212945.dir/0007_cpu_gen/  ]
+Info: cpu: # 2021.05.09 19:00:47 (*) Starting Nios II generation
+Info: cpu: # 2021.05.09 19:00:47 (*)   Checking for plaintext license.
+Info: cpu: # 2021.05.09 19:00:48 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/16.1/quartus/bin64/
+Info: cpu: # 2021.05.09 19:00:48 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2021.05.09 19:00:48 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2021.05.09 19:00:48 (*)   Plaintext license not found.
+Info: cpu: # 2021.05.09 19:00:48 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2021.05.09 19:00:48 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2021.05.09 19:00:48 (*)   Creating all objects for CPU
+Info: cpu: # 2021.05.09 19:00:49 (*)   Creating 'C:/Users/danie/AppData/Local/Temp/alt8756_8124458315165212945.dir/0007_cpu_gen//nios_handshake_nios2_gen2_0_cpu_nios2_waves.do'
+Info: cpu: # 2021.05.09 19:00:49 (*)   Generating RTL from CPU objects
+Info: cpu: # 2021.05.09 19:00:49 (*)   Creating plain-text RTL
+Info: cpu: # 2021.05.09 19:00:50 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'nios_handshake_nios2_gen2_0_cpu'
 Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -188,31 +197,31 @@ Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "c
 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
 Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
-Info: Reusing file /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: Reusing file C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv
 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
-Info: Reusing file /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: Reusing file C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv
 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
-Info: Reusing file /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: Reusing file C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
 Info: nios_handshake_tb: Done "nios_handshake_tb" with 29 modules, 49 files
 Info: qsys-generate succeeded.
-Info: sim-script-gen --spd=/home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake_tb.spd --output-directory=/home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ --use-relative-paths=true
-Info: Doing: ip-make-simscript --spd=/home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake_tb.spd --output-directory=/home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ --use-relative-paths=true
-Info: Generating the following file(s) for MODELSIM simulator in /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ directory:
+Info: sim-script-gen --spd=C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus\qsys\nios_handshake_tb.spd --output-directory=C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus\qsys\nios_handshake_tb.spd --output-directory=C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ directory:
 Info: 	mentor/msim_setup.tcl
 Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
-Info: Generating the following file(s) for VCSMX simulator in /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ directory:
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ directory:
 Info: 	synopsys/vcsmx/synopsys_sim.setup
 Info: 	synopsys/vcsmx/vcsmx_setup.sh
-Info: Generating the following file(s) for NCSIM simulator in /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ directory:
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ directory:
 Info: 	cadence/cds.lib
 Info: 	cadence/hdl.var
 Info: 	cadence/ncsim_setup.sh
 Info: 	28 .cds.lib files in cadence/cds_libs/ directory
-Info: Generating the following file(s) for RIVIERA simulator in /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ directory:
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/ directory:
 Info: 	aldec/rivierapro_setup.tcl
-Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/daniel/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/.
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus/qsys/nios_handshake/testbench/.
 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
-Info: Finished: Create testbench Platform Designer system
+Info: Finished: Create testbench Qsys system

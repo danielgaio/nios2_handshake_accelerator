@@ -7,8 +7,8 @@
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
- <library expandedCategories="Project,Library" />
- <window width="1920" height="1048" x="2336" y="697" />
+ <library expandedCategories="Library,Project" />
+ <window width="1938" height="1048" x="-9" y="-9" />
  <clocktable>
   <columns>
    <clockname preferredWidth="355" />

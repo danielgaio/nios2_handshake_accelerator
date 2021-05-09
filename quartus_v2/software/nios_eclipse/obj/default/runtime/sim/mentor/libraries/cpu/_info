@@ -1,0 +1,560 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/software/nios_eclipse/obj/default/runtime/sim/mentor
+vQsys_handshake_nios2_gen2_0_cpu
+Z1 !s110 1620598963
+!i10b 1
+!s100 c]8z=?c?08G=[nUeKGGL81
+IhV[zPNdG6Dki<J6Fe8TZf3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1620598739
+Z4 8C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu.v
+Z5 FC:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu.v
+L0 2834
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1620598963.000000
+Z8 !s107 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu.v|
+Z9 !s90 -reportprogress|300|C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu.v|-work|cpu|
+!i113 1
+Z10 o-work cpu
+Z11 tCvgOpt 0
+n@qsys_handshake_nios2_gen2_0_cpu
+vQsys_handshake_nios2_gen2_0_cpu_debug_slave_sysclk
+R1
+!i10b 1
+!s100 @>g8aISW2oH>YX9?zCmAk1
+IF:Z[@21]AJ=MCYH9o;b_10
+R2
+R0
+R3
+8C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_sysclk.v
+FC:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_sysclk.v
+Z12 L0 21
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_sysclk.v|-work|cpu|
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_debug_slave_sysclk
+vQsys_handshake_nios2_gen2_0_cpu_debug_slave_tck
+R1
+!i10b 1
+!s100 LjmMN:FW67edcAb?flfAk3
+I[NjBE78U052Sd6;l>IT7F1
+R2
+R0
+R3
+8C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_tck.v
+FC:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_tck.v
+R12
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_tck.v|-work|cpu|
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_debug_slave_tck
+vQsys_handshake_nios2_gen2_0_cpu_debug_slave_wrapper
+Z13 !s110 1620598964
+!i10b 1
+!s100 1m<CQi5G=gIkhe4j^3zN02
+IAM4:@2=3RJK@`KMh`V1`m3
+R2
+R0
+R3
+8C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_wrapper.v
+FC:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_wrapper.v
+R12
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_wrapper.v|-work|cpu|
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_debug_slave_wrapper
+vQsys_handshake_nios2_gen2_0_cpu_nios2_avalon_reg
+R1
+!i10b 1
+!s100 hKASBn@hBCV<0g`mmenSY2
+IVW@IF5PHLFghgFY>VJQ1D1
+R2
+R0
+R3
+R4
+R5
+L0 2023
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_avalon_reg
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci
+R1
+!i10b 1
+!s100 U``@NCK^750dJWM04W<KA2
+IAj^o^[V3JzG8P_2<k8ID43
+R2
+R0
+R3
+R4
+R5
+L0 2362
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_break
+R1
+!i10b 1
+!s100 l;8SkbOc6Jg]o`3Ozd;3?0
+IC6d=G@84SbM^gLSBO?loT0
+R2
+R0
+R3
+R4
+R5
+L0 295
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_break
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+R1
+!i10b 1
+!s100 KNeZXK?9:Z9zSWjb>SeNM3
+Igo8bXRS]`ddY>ndz92eQ[0
+R2
+R0
+R3
+R4
+R5
+L0 1265
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_dbrk
+R1
+!i10b 1
+!s100 o1z5^3Ic5n?D:_7YRf9A20
+IG9_>B[jMQO9fV]zL[@ZQT0
+R2
+R0
+R3
+R4
+R5
+L0 795
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_dbrk
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_debug
+R1
+!i10b 1
+!s100 k4C];>Yf;TZTBH1ORWRe43
+IQE^f@]jmUck:f;Rf6DgTB2
+R2
+R0
+R3
+R4
+R5
+L0 153
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_debug
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_dtrace
+R1
+!i10b 1
+!s100 0ca;aFBgjoEF7YW]RTN1K2
+IE^GbGZemFPf^L@]N69AOQ1
+R2
+R0
+R3
+R4
+R5
+L0 1183
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_dtrace
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_fifo
+R1
+!i10b 1
+!s100 ZBRbm1cP>A<N69a`L_R3F3
+IR;BDe]<ii15i5J^e`Sg4j2
+R2
+R0
+R3
+R4
+R5
+L0 1427
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_fifo
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+R1
+!i10b 1
+!s100 73cQk3W02h<`9jNLlE>^S0
+IT7V<l7;YE=01JWXPlIShN3
+R2
+R0
+R3
+R4
+R5
+L0 1380
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+R1
+!i10b 1
+!s100 FolD2mWeca:TPS>dLzY@00
+IScg0G3H>=eNFBT`5QPFf01
+R2
+R0
+R3
+R4
+R5
+L0 1337
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_im
+R1
+!i10b 1
+!s100 :7VNVCh^T00OlMbHa]baj3
+IH4OTi5U=PB<6f4bF:j5VJ2
+R2
+R0
+R3
+R4
+R5
+L0 1936
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_im
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_itrace
+R1
+!i10b 1
+!s100 JI5J1e:?JIXMUV^EgD>I^2
+I?kPP:Lz]i9m@6iahoDX402
+R2
+R0
+R3
+R4
+R5
+L0 982
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_itrace
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_pib
+R1
+!i10b 1
+!s100 _0dZlMW?KGU^KQaME[=cW0
+Ikke3BznUU@BNlgeS>>`0H1
+R2
+R0
+R3
+R4
+R5
+L0 1913
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_pib
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_td_mode
+R1
+!i10b 1
+!s100 LBTgJ_ak0l?E1E<Adf[ee1
+IV>B1C6HCAn82h5Y5D=kC02
+R2
+R0
+R3
+R4
+R5
+L0 1115
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_td_mode
+vQsys_handshake_nios2_gen2_0_cpu_nios2_oci_xbrk
+R1
+!i10b 1
+!s100 >=0IA:S>CMPHEJ]cLDbT@0
+IXdF0:]PPYXZ>CQPC5UGd:1
+R2
+R0
+R3
+R4
+R5
+L0 588
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_oci_xbrk
+vQsys_handshake_nios2_gen2_0_cpu_nios2_ocimem
+R1
+!i10b 1
+!s100 a8?BhIOBV]fgMW8JXe1mH1
+I_[9kTXD4zVA1nL;5_8UWP3
+R2
+R0
+R3
+R4
+R5
+L0 2181
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_ocimem
+vQsys_handshake_nios2_gen2_0_cpu_nios2_performance_monitors
+R1
+!i10b 1
+!s100 eaJFzAzJzFT29UD4Qf6kL0
+ILGAPkRciEI5JIMS7[?m2Z0
+R2
+R0
+R3
+R4
+R5
+L0 2006
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_nios2_performance_monitors
+vQsys_handshake_nios2_gen2_0_cpu_ociram_sp_ram_module
+R1
+!i10b 1
+!s100 EnW>6eUUm;NabVl7<fTgc3
+IGh1Zdk=L>oTcG]8MRL=Z21
+R2
+R0
+R3
+R4
+R5
+L0 2116
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_ociram_sp_ram_module
+vQsys_handshake_nios2_gen2_0_cpu_register_bank_a_module
+R1
+!i10b 1
+!s100 zD9@Z8?ci?BN=4hoUfYo;3
+IYb70lO7XRmz7jlmT6N;942
+R2
+R0
+R3
+R4
+R5
+R12
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_register_bank_a_module
+vQsys_handshake_nios2_gen2_0_cpu_register_bank_b_module
+R1
+!i10b 1
+!s100 KnRIT[JQ378`lDmgT7igH3
+Id>fP8EfVBn1>:a]08Un6?0
+R2
+R0
+R3
+R4
+R5
+L0 87
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_register_bank_b_module
+vQsys_handshake_nios2_gen2_0_cpu_test_bench
+R13
+!i10b 1
+!s100 PKJ0Kk`zTC:_K8KO^XI0W2
+IL@ak4z@592zf>RK1L2QFX1
+R2
+R0
+R3
+8C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_test_bench.v
+FC:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_test_bench.v
+R12
+R6
+r1
+!s85 0
+31
+!s108 1620598964.000000
+!s107 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_test_bench.v|
+!s90 -reportprogress|300|C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_test_bench.v|-work|cpu|
+!i113 1
+R10
+R11
+n@qsys_handshake_nios2_gen2_0_cpu_test_bench

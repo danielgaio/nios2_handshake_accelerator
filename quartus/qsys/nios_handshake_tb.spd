@@ -93,11 +93,11 @@
    type="SYSTEM_VERILOG"
    library="nios2_gen2_0_data_master_translator" />
  <file
-   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu.v"
-   type="VERILOG"
+   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu.sdc"
+   type="SDC"
    library="cpu" />
  <file
-   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_wrapper.v"
+   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu.v"
    type="VERILOG"
    library="cpu" />
  <file
@@ -109,7 +109,7 @@
    type="VERILOG"
    library="cpu" />
  <file
-   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_test_bench.v"
+   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_wrapper.v"
    type="VERILOG"
    library="cpu" />
  <file
@@ -117,44 +117,44 @@
    type="OTHER"
    library="cpu" />
  <file
-   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu.sdc"
-   type="SDC"
+   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.dat"
+   type="DAT"
    library="cpu" />
  <file
    path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.hex"
    type="HEX"
    library="cpu" />
  <file
-   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.dat"
-   type="DAT"
-   library="cpu" />
- <file
    path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.mif"
    type="MIF"
-   library="cpu" />
- <file
-   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.hex"
-   type="HEX"
-   library="cpu" />
- <file
-   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.dat"
-   type="DAT"
-   library="cpu" />
- <file
-   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.mif"
-   type="MIF"
-   library="cpu" />
- <file
-   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.hex"
-   type="HEX"
    library="cpu" />
  <file
    path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.dat"
    type="DAT"
    library="cpu" />
  <file
+   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.hex"
+   type="HEX"
+   library="cpu" />
+ <file
    path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.mif"
    type="MIF"
+   library="cpu" />
+ <file
+   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.dat"
+   type="DAT"
+   library="cpu" />
+ <file
+   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.hex"
+   type="HEX"
+   library="cpu" />
+ <file
+   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.mif"
+   type="MIF"
+   library="cpu" />
+ <file
+   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_test_bench.v"
+   type="VERILOG"
    library="cpu" />
  <file
    path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/altera_reset_controller.v"
@@ -181,16 +181,16 @@
    type="HEX"
    library="onchip_memory2_0" />
  <file
-   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_onchip_memory2_0.vhd"
-   type="VHDL"
+   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_onchip_memory2_0.v"
+   type="VERILOG"
    library="onchip_memory2_0" />
  <file
    path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0.v"
    type="VERILOG"
    library="nios2_gen2_0" />
  <file
-   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_jtag_uart_0.vhd"
-   type="VHDL"
+   path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/nios_handshake_jtag_uart_0.v"
+   type="VERILOG"
    library="jtag_uart_0" />
  <file
    path="nios_handshake/testbench/nios_handshake_tb/simulation/submodules/altera_avalon_reset_source.vhd"

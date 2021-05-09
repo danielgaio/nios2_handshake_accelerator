@@ -1,0 +1,51 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/software/nios_eclipse/obj/default/runtime/sim/mentor
+Eqsys_handshake
+Z1 w1620598727
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake.vhd
+Z6 FC:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake.vhd
+l0
+L9
+VJl7kZUTdMo8V7LJm1zeko2
+!s100 cVdDO__<1R?Z3QPEb3en13
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1620598965
+!i10b 1
+Z9 !s108 1620598965.000000
+Z10 !s90 -reportprogress|300|C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake.vhd|-work|Qsys_handshake_inst|
+Z11 !s107 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake.vhd|
+!i113 1
+Z12 o-work Qsys_handshake_inst
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 14 qsys_handshake 0 22 Jl7kZUTdMo8V7LJm1zeko2
+l239
+L16
+VK4ERY4m7ZU<9BQ4<3I?L61
+!s100 ^CAeV?V3lgW4MVPXdceVZ1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

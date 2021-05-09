@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 20.1 720 linux 2021.05.09.18:16:10
+# ACDS 16.1 196 win32 2021.05.09.19:00:54
 # ----------------------------------------
 # Auto-generated simulation script rivierapro_setup.tcl
 # ----------------------------------------
@@ -47,8 +47,6 @@
 # #
 # # Set any compilation options you require (this is unusual).
 # set USER_DEFINED_COMPILE_OPTIONS <compilation options>
-# set USER_DEFINED_VHDL_COMPILE_OPTIONS <compilation options for VHDL>
-# set USER_DEFINED_VERILOG_COMPILE_OPTIONS <compilation options for Verilog>
 # #
 # # Call command to compile the Quartus EDA simulation library.
 # dev_com
@@ -113,17 +111,11 @@ if ![info exists QSYS_SIMDIR] {
 }
 
 if ![info exists QUARTUS_INSTALL_DIR] { 
-  set QUARTUS_INSTALL_DIR "/home/daniel/intelFPGA_lite/20.1/quartus/"
+  set QUARTUS_INSTALL_DIR "C:/intelfpga_lite/16.1/quartus/"
 }
 
 if ![info exists USER_DEFINED_COMPILE_OPTIONS] { 
   set USER_DEFINED_COMPILE_OPTIONS ""
-}
-if ![info exists USER_DEFINED_VHDL_COMPILE_OPTIONS] { 
-  set USER_DEFINED_VHDL_COMPILE_OPTIONS ""
-}
-if ![info exists USER_DEFINED_VERILOG_COMPILE_OPTIONS] { 
-  set USER_DEFINED_VERILOG_COMPILE_OPTIONS ""
 }
 if ![info exists USER_DEFINED_ELAB_OPTIONS] { 
   set USER_DEFINED_ELAB_OPTIONS ""
@@ -152,15 +144,15 @@ if { [ string match "Active" $Aldec ] } {
 # Copy ROM/RAM files to simulation directory
 alias file_copy {
   echo "\[exec\] file_copy"
-  file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.hex ./
   file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.dat ./
+  file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.hex ./
   file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.mif ./
-  file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.hex ./
-  file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.dat ./
-  file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.mif ./
-  file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.hex ./
   file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.dat ./
+  file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.hex ./
   file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.mif ./
+  file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.dat ./
+  file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.hex ./
+  file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.mif ./
   file copy -force $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_onchip_memory2_0.hex ./
 }
 
@@ -255,73 +247,72 @@ vmap       nios_handshake_inst                          ./libraries/nios_handsha
 # Compile device library files
 alias dev_com {
   echo "\[exec\] dev_com"
-  eval vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.v"              -work altera_ver      
-  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/220model.v"                       -work lpm_ver         
-  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate.v"                          -work sgate_ver       
-  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.v"                      -work altera_mf_ver   
-  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim.sv"                  -work altera_lnsim_ver
-  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_atoms.v"               -work cycloneive_ver  
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd"        -work altera          
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_standard_functions.vhd"    -work altera          
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/alt_dspbuilder_package.vhd"       -work altera          
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_europa_support_lib.vhd"    -work altera          
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives_components.vhd" -work altera          
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.vhd"            -work altera          
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/220pack.vhd"                      -work lpm             
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/220model.vhd"                     -work lpm             
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate_pack.vhd"                   -work sgate           
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate.vhd"                        -work sgate           
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf_components.vhd"         -work altera_mf       
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.vhd"                    -work altera_mf       
-  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim.sv"                  -work altera_lnsim    
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim_components.vhd"      -work altera_lnsim    
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_atoms.vhd"             -work cycloneive      
-  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_components.vhd"        -work cycloneive      
+  eval vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.v"              -work altera_ver      
+  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/220model.v"                       -work lpm_ver         
+  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate.v"                          -work sgate_ver       
+  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.v"                      -work altera_mf_ver   
+  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim.sv"                  -work altera_lnsim_ver
+  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_atoms.v"               -work cycloneive_ver  
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd"        -work altera          
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_standard_functions.vhd"    -work altera          
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/alt_dspbuilder_package.vhd"       -work altera          
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_europa_support_lib.vhd"    -work altera          
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives_components.vhd" -work altera          
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.vhd"            -work altera          
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/220pack.vhd"                      -work lpm             
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/220model.vhd"                     -work lpm             
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate_pack.vhd"                   -work sgate           
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate.vhd"                        -work sgate           
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf_components.vhd"         -work altera_mf       
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.vhd"                    -work altera_mf       
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim_components.vhd"      -work altera_lnsim    
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_atoms.vhd"             -work cycloneive      
+  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_components.vhd"        -work cycloneive      
 }
 
 # ----------------------------------------
 # Compile the design files in correct order
 alias com {
   echo "\[exec\] com"
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv" -work error_adapter_0                             
-  eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_avalon_st_adapter.vhd"                -work avalon_st_adapter                           
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_mux_001.sv"                       -work rsp_mux_001                                 
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work rsp_mux_001                                 
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                                     
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work rsp_mux                                     
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                                   
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_mux_001.sv"                       -work cmd_mux_001                                 
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux_001                                 
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                                     
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux                                     
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_demux_001.sv"                     -work cmd_demux_001                               
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                                   
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_003.sv"                        -work router_003                                  
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_002.sv"                        -work router_002                                  
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_001.sv"                        -work router_001                                  
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router.sv"                            -work router                                      
-  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_sc_fifo.v"                                               -work jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_slave_agent.sv"                                          -work jtag_uart_0_avalon_jtag_slave_agent         
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_burst_uncompressor.sv"                                   -work jtag_uart_0_avalon_jtag_slave_agent         
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_master_agent.sv"                                         -work nios2_gen2_0_data_master_agent              
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_slave_translator.sv"                                     -work jtag_uart_0_avalon_jtag_slave_translator    
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_master_translator.sv"                                    -work nios2_gen2_0_data_master_translator         
-  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu.v"                                     -work cpu                                         
-  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_wrapper.v"                 -work cpu                                         
-  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_sysclk.v"                  -work cpu                                         
-  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_tck.v"                     -work cpu                                         
-  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_test_bench.v"                          -work cpu                                         
-  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_reset_controller.v"                                             -work rst_controller                              
-  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_reset_synchronizer.v"                                           -work rst_controller                              
-  eval  vlog  $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_irq_mapper.sv"                                          -work irq_mapper                                  
-  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0.v"                                    -work mm_interconnect_0                           
-  eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_onchip_memory2_0.vhd"                                   -work onchip_memory2_0                            
-  eval  vlog -v2k5 $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0.v"                                         -work nios2_gen2_0                                
-  eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_jtag_uart_0.vhd"                                        -work jtag_uart_0                                 
-  eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_reset_source.vhd"                                        -work nios_handshake_inst_reset_bfm               
-  eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_clock_source.vhd"                                        -work nios_handshake_inst_clk_bfm                 
-  eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake.vhd"                                                    -work nios_handshake_inst                         
-  eval  vcom $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS          "$QSYS_SIMDIR/nios_handshake_tb/simulation/nios_handshake_tb.vhd"                                                                                                              
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv" -work error_adapter_0                             
+  eval  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_avalon_st_adapter.vhd"                -work avalon_st_adapter                           
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_mux_001.sv"                       -work rsp_mux_001                                 
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work rsp_mux_001                                 
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                                     
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work rsp_mux                                     
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                                   
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_mux_001.sv"                       -work cmd_mux_001                                 
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux_001                                 
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                                     
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux                                     
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_demux_001.sv"                     -work cmd_demux_001                               
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                                   
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_003.sv"                        -work router_003                                  
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_002.sv"                        -work router_002                                  
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_001.sv"                        -work router_001                                  
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router.sv"                            -work router                                      
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_sc_fifo.v"                                               -work jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_slave_agent.sv"                                          -work jtag_uart_0_avalon_jtag_slave_agent         
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_burst_uncompressor.sv"                                   -work jtag_uart_0_avalon_jtag_slave_agent         
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_master_agent.sv"                                         -work nios2_gen2_0_data_master_agent              
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_slave_translator.sv"                                     -work jtag_uart_0_avalon_jtag_slave_translator    
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_master_translator.sv"                                    -work nios2_gen2_0_data_master_translator         
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu.v"                                     -work cpu                                         
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_sysclk.v"                  -work cpu                                         
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_tck.v"                     -work cpu                                         
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_wrapper.v"                 -work cpu                                         
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_test_bench.v"                          -work cpu                                         
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_reset_controller.v"                                             -work rst_controller                              
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_reset_synchronizer.v"                                           -work rst_controller                              
+  eval  vlog  $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_irq_mapper.sv"                                          -work irq_mapper                                  
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0.v"                                    -work mm_interconnect_0                           
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_onchip_memory2_0.v"                                     -work onchip_memory2_0                            
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0.v"                                         -work nios2_gen2_0                                
+  eval  vlog -v2k5 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_jtag_uart_0.v"                                          -work jtag_uart_0                                 
+  eval  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_reset_source.vhd"                                        -work nios_handshake_inst_reset_bfm               
+  eval  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_clock_source.vhd"                                        -work nios_handshake_inst_clk_bfm                 
+  eval  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake.vhd"                                                    -work nios_handshake_inst                         
+  eval  vcom $USER_DEFINED_COMPILE_OPTIONS       "$QSYS_SIMDIR/nios_handshake_tb/simulation/nios_handshake_tb.vhd"                                                                                                              
 }
 
 # ----------------------------------------
@@ -359,41 +350,37 @@ alias ld_debug "
 alias h {
   echo "List Of Command Line Aliases"
   echo
-  echo "file_copy                                         -- Copy ROM/RAM files to simulation directory"
+  echo "file_copy                     -- Copy ROM/RAM files to simulation directory"
   echo
-  echo "dev_com                                           -- Compile device library files"
+  echo "dev_com                       -- Compile device library files"
   echo
-  echo "com                                               -- Compile the design files in correct order"
+  echo "com                           -- Compile the design files in correct order"
   echo
-  echo "elab                                              -- Elaborate top level design"
+  echo "elab                          -- Elaborate top level design"
   echo
-  echo "elab_debug                                        -- Elaborate the top level design with -dbg -O2 option"
+  echo "elab_debug                    -- Elaborate the top level design with -dbg -O2 option"
   echo
-  echo "ld                                                -- Compile all the design files and elaborate the top level design"
+  echo "ld                            -- Compile all the design files and elaborate the top level design"
   echo
-  echo "ld_debug                                          -- Compile all the design files and elaborate the top level design with -dbg -O2"
+  echo "ld_debug                      -- Compile all the design files and elaborate the top level design with -dbg -O2"
   echo
   echo 
   echo
   echo "List Of Variables"
   echo
-  echo "TOP_LEVEL_NAME                                    -- Top level module name."
-  echo "                                                     For most designs, this should be overridden"
-  echo "                                                     to enable the elab/elab_debug aliases."
+  echo "TOP_LEVEL_NAME                -- Top level module name."
+  echo "                                 For most designs, this should be overridden"
+  echo "                                 to enable the elab/elab_debug aliases."
   echo
-  echo "SYSTEM_INSTANCE_NAME                              -- Instantiated system module name inside top level module."
+  echo "SYSTEM_INSTANCE_NAME          -- Instantiated system module name inside top level module."
   echo
-  echo "QSYS_SIMDIR                                       -- Platform Designer base simulation directory."
+  echo "QSYS_SIMDIR                   -- Qsys base simulation directory."
   echo
-  echo "QUARTUS_INSTALL_DIR                               -- Quartus installation directory."
+  echo "QUARTUS_INSTALL_DIR           -- Quartus installation directory."
   echo
-  echo "USER_DEFINED_COMPILE_OPTIONS                      -- User-defined compile options, added to com/dev_com aliases."
+  echo "USER_DEFINED_COMPILE_OPTIONS  -- User-defined compile options, added to com/dev_com aliases."
   echo
-  echo "USER_DEFINED_ELAB_OPTIONS                         -- User-defined elaboration options, added to elab/elab_debug aliases."
-  echo
-  echo "USER_DEFINED_VHDL_COMPILE_OPTIONS                 -- User-defined vhdl compile options, added to com/dev_com aliases."
-  echo
-  echo "USER_DEFINED_VERILOG_COMPILE_OPTIONS              -- User-defined verilog compile options, added to com/dev_com aliases."
+  echo "USER_DEFINED_ELAB_OPTIONS     -- User-defined elaboration options, added to elab/elab_debug aliases."
 }
 file_copy
 h

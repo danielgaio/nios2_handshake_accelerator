@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 20.1 720 linux 2021.05.09.18:16:10
+# ACDS 16.1 196 win32 2021.05.09.19:00:54
 
 # ----------------------------------------
 # ncsim - auto-generated simulation script
@@ -55,17 +55,12 @@
 # # Run Quartus-generated IP simulation script once to compile Quartus EDA
 # # simulation libraries and Quartus-generated IP simulation files, and copy
 # # any ROM/RAM initialization files to the simulation directory.
-# # - If necessary, specify any compilation options:
-# #   USER_DEFINED_COMPILE_OPTIONS
-# #   USER_DEFINED_VHDL_COMPILE_OPTIONS applied to vhdl compiler
-# #   USER_DEFINED_VERILOG_COMPILE_OPTIONS applied to verilog compiler
+# # - If necessary, specify USER_DEFINED_COMPILE_OPTIONS.
 # #
 # source <script generation output directory>/cadence/ncsim_setup.sh \
 # SKIP_ELAB=1 \
 # SKIP_SIM=1 \
 # USER_DEFINED_COMPILE_OPTIONS=<compilation options for your design> \
-# USER_DEFINED_VHDL_COMPILE_OPTIONS=<VHDL compilation options for your design> \
-# USER_DEFINED_VERILOG_COMPILE_OPTIONS=<Verilog compilation options for your design> \
 # QSYS_SIMDIR=<script generation output directory>
 # #
 # # Compile all design files and testbench files, including the top level.
@@ -106,12 +101,12 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 20.1 720 linux 2021.05.09.18:16:10
+# ACDS 16.1 196 win32 2021.05.09.19:00:54
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="nios_handshake_tb"
 QSYS_SIMDIR="./../"
-QUARTUS_INSTALL_DIR="/home/daniel/intelFPGA_lite/20.1/quartus/"
+QUARTUS_INSTALL_DIR="C:/intelfpga_lite/16.1/quartus/"
 SKIP_FILE_COPY=0
 SKIP_DEV_COM=0
 SKIP_COM=0
@@ -178,6 +173,7 @@ mkdir -p ./libraries/altera_ver/
 mkdir -p ./libraries/lpm_ver/
 mkdir -p ./libraries/sgate_ver/
 mkdir -p ./libraries/altera_mf_ver/
+mkdir -p ./libraries/altera_lnsim_ver/
 mkdir -p ./libraries/cycloneive_ver/
 mkdir -p ./libraries/altera/
 mkdir -p ./libraries/lpm/
@@ -189,86 +185,86 @@ mkdir -p ./libraries/cycloneive/
 # ----------------------------------------
 # copy RAM/ROM files to simulation directory
 if [ $SKIP_FILE_COPY -eq 0 ]; then
-  cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.hex ./
   cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.dat ./
+  cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.hex ./
   cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_ociram_default_contents.mif ./
-  cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.hex ./
-  cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.dat ./
-  cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.mif ./
-  cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.hex ./
   cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.dat ./
+  cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.hex ./
   cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_a.mif ./
+  cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.dat ./
+  cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.hex ./
+  cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_rf_ram_b.mif ./
   cp -f $QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_onchip_memory2_0.hex ./
 fi
 
 # ----------------------------------------
 # compile device library files
 if [ $SKIP_DEV_COM -eq 0 ]; then
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.v"              -work altera_ver    
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QUARTUS_INSTALL_DIR/eda/sim_lib/220model.v"                       -work lpm_ver       
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate.v"                          -work sgate_ver     
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.v"                      -work altera_mf_ver 
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_atoms.v"               -work cycloneive_ver
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd"        -work altera        
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_standard_functions.vhd"    -work altera        
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/alt_dspbuilder_package.vhd"       -work altera        
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_europa_support_lib.vhd"    -work altera        
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives_components.vhd" -work altera        
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.vhd"            -work altera        
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/220pack.vhd"                      -work lpm           
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/220model.vhd"                     -work lpm           
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate_pack.vhd"                   -work sgate         
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate.vhd"                        -work sgate         
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf_components.vhd"         -work altera_mf     
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.vhd"                    -work altera_mf     
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim.sv"                  -work altera_lnsim  
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim_components.vhd"      -work altera_lnsim  
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_atoms.vhd"             -work cycloneive    
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_components.vhd"        -work cycloneive    
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.v"              -work altera_ver      
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QUARTUS_INSTALL_DIR/eda/sim_lib/220model.v"                       -work lpm_ver         
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate.v"                          -work sgate_ver       
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.v"                      -work altera_mf_ver   
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim.sv"                  -work altera_lnsim_ver
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_atoms.v"               -work cycloneive_ver  
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd"        -work altera          
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_standard_functions.vhd"    -work altera          
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/alt_dspbuilder_package.vhd"       -work altera          
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_europa_support_lib.vhd"    -work altera          
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives_components.vhd" -work altera          
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.vhd"            -work altera          
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/220pack.vhd"                      -work lpm             
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/220model.vhd"                     -work lpm             
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate_pack.vhd"                   -work sgate           
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/sgate.vhd"                        -work sgate           
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf_components.vhd"         -work altera_mf       
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_mf.vhd"                    -work altera_mf       
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/altera_lnsim_components.vhd"      -work altera_lnsim    
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_atoms.vhd"             -work cycloneive      
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QUARTUS_INSTALL_DIR/eda/sim_lib/cycloneive_components.vhd"        -work cycloneive      
 fi
 
 # ----------------------------------------
 # compile design files in correct order
 if [ $SKIP_COM -eq 0 ]; then
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv" -work error_adapter_0                              -cdslib ./cds_libs/error_adapter_0.cds.lib                             
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_avalon_st_adapter.vhd"                -work avalon_st_adapter                            -cdslib ./cds_libs/avalon_st_adapter.cds.lib                           
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_mux_001.sv"                       -work rsp_mux_001                                  -cdslib ./cds_libs/rsp_mux_001.cds.lib                                 
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work rsp_mux_001                                  -cdslib ./cds_libs/rsp_mux_001.cds.lib                                 
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                                      -cdslib ./cds_libs/rsp_mux.cds.lib                                     
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work rsp_mux                                      -cdslib ./cds_libs/rsp_mux.cds.lib                                     
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                                    -cdslib ./cds_libs/rsp_demux.cds.lib                                   
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_mux_001.sv"                       -work cmd_mux_001                                  -cdslib ./cds_libs/cmd_mux_001.cds.lib                                 
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux_001                                  -cdslib ./cds_libs/cmd_mux_001.cds.lib                                 
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                                      -cdslib ./cds_libs/cmd_mux.cds.lib                                     
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux                                      -cdslib ./cds_libs/cmd_mux.cds.lib                                     
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_demux_001.sv"                     -work cmd_demux_001                                -cdslib ./cds_libs/cmd_demux_001.cds.lib                               
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                                    -cdslib ./cds_libs/cmd_demux.cds.lib                                   
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_003.sv"                        -work router_003                                   -cdslib ./cds_libs/router_003.cds.lib                                  
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_002.sv"                        -work router_002                                   -cdslib ./cds_libs/router_002.cds.lib                                  
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_001.sv"                        -work router_001                                   -cdslib ./cds_libs/router_001.cds.lib                                  
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router.sv"                            -work router                                       -cdslib ./cds_libs/router.cds.lib                                      
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_sc_fifo.v"                                               -work jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -cdslib ./cds_libs/jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo.cds.lib
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_slave_agent.sv"                                          -work jtag_uart_0_avalon_jtag_slave_agent          -cdslib ./cds_libs/jtag_uart_0_avalon_jtag_slave_agent.cds.lib         
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_burst_uncompressor.sv"                                   -work jtag_uart_0_avalon_jtag_slave_agent          -cdslib ./cds_libs/jtag_uart_0_avalon_jtag_slave_agent.cds.lib         
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_master_agent.sv"                                         -work nios2_gen2_0_data_master_agent               -cdslib ./cds_libs/nios2_gen2_0_data_master_agent.cds.lib              
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_slave_translator.sv"                                     -work jtag_uart_0_avalon_jtag_slave_translator     -cdslib ./cds_libs/jtag_uart_0_avalon_jtag_slave_translator.cds.lib    
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_master_translator.sv"                                    -work nios2_gen2_0_data_master_translator          -cdslib ./cds_libs/nios2_gen2_0_data_master_translator.cds.lib         
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu.v"                                     -work cpu                                          -cdslib ./cds_libs/cpu.cds.lib                                         
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_wrapper.v"                 -work cpu                                          -cdslib ./cds_libs/cpu.cds.lib                                         
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_sysclk.v"                  -work cpu                                          -cdslib ./cds_libs/cpu.cds.lib                                         
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_tck.v"                     -work cpu                                          -cdslib ./cds_libs/cpu.cds.lib                                         
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_test_bench.v"                          -work cpu                                          -cdslib ./cds_libs/cpu.cds.lib                                         
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_reset_controller.v"                                             -work rst_controller                               -cdslib ./cds_libs/rst_controller.cds.lib                              
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_reset_synchronizer.v"                                           -work rst_controller                               -cdslib ./cds_libs/rst_controller.cds.lib                              
-  ncvlog -sv $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_irq_mapper.sv"                                          -work irq_mapper                                   -cdslib ./cds_libs/irq_mapper.cds.lib                                  
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0.v"                                    -work mm_interconnect_0                            -cdslib ./cds_libs/mm_interconnect_0.cds.lib                           
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_onchip_memory2_0.vhd"                                   -work onchip_memory2_0                             -cdslib ./cds_libs/onchip_memory2_0.cds.lib                            
-  ncvlog $USER_DEFINED_VERILOG_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS     "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0.v"                                         -work nios2_gen2_0                                 -cdslib ./cds_libs/nios2_gen2_0.cds.lib                                
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_jtag_uart_0.vhd"                                        -work jtag_uart_0                                  -cdslib ./cds_libs/jtag_uart_0.cds.lib                                 
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_reset_source.vhd"                                        -work nios_handshake_inst_reset_bfm                -cdslib ./cds_libs/nios_handshake_inst_reset_bfm.cds.lib               
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_clock_source.vhd"                                        -work nios_handshake_inst_clk_bfm                  -cdslib ./cds_libs/nios_handshake_inst_clk_bfm.cds.lib                 
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake.vhd"                                                    -work nios_handshake_inst                          -cdslib ./cds_libs/nios_handshake_inst.cds.lib                         
-  ncvhdl -v93 $USER_DEFINED_VHDL_COMPILE_OPTIONS $USER_DEFINED_COMPILE_OPTIONS   "$QSYS_SIMDIR/nios_handshake_tb/simulation/nios_handshake_tb.vhd"                                                                                                                                                                                      
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv" -work error_adapter_0                              -cdslib ./cds_libs/error_adapter_0.cds.lib                             
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_avalon_st_adapter.vhd"                -work avalon_st_adapter                            -cdslib ./cds_libs/avalon_st_adapter.cds.lib                           
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_mux_001.sv"                       -work rsp_mux_001                                  -cdslib ./cds_libs/rsp_mux_001.cds.lib                                 
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work rsp_mux_001                                  -cdslib ./cds_libs/rsp_mux_001.cds.lib                                 
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                                      -cdslib ./cds_libs/rsp_mux.cds.lib                                     
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work rsp_mux                                      -cdslib ./cds_libs/rsp_mux.cds.lib                                     
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                                    -cdslib ./cds_libs/rsp_demux.cds.lib                                   
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_mux_001.sv"                       -work cmd_mux_001                                  -cdslib ./cds_libs/cmd_mux_001.cds.lib                                 
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux_001                                  -cdslib ./cds_libs/cmd_mux_001.cds.lib                                 
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                                      -cdslib ./cds_libs/cmd_mux.cds.lib                                     
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux                                      -cdslib ./cds_libs/cmd_mux.cds.lib                                     
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_demux_001.sv"                     -work cmd_demux_001                                -cdslib ./cds_libs/cmd_demux_001.cds.lib                               
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                                    -cdslib ./cds_libs/cmd_demux.cds.lib                                   
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_003.sv"                        -work router_003                                   -cdslib ./cds_libs/router_003.cds.lib                                  
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_002.sv"                        -work router_002                                   -cdslib ./cds_libs/router_002.cds.lib                                  
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router_001.sv"                        -work router_001                                   -cdslib ./cds_libs/router_001.cds.lib                                  
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0_router.sv"                            -work router                                       -cdslib ./cds_libs/router.cds.lib                                      
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_sc_fifo.v"                                               -work jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -cdslib ./cds_libs/jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo.cds.lib
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_slave_agent.sv"                                          -work jtag_uart_0_avalon_jtag_slave_agent          -cdslib ./cds_libs/jtag_uart_0_avalon_jtag_slave_agent.cds.lib         
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_burst_uncompressor.sv"                                   -work jtag_uart_0_avalon_jtag_slave_agent          -cdslib ./cds_libs/jtag_uart_0_avalon_jtag_slave_agent.cds.lib         
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_master_agent.sv"                                         -work nios2_gen2_0_data_master_agent               -cdslib ./cds_libs/nios2_gen2_0_data_master_agent.cds.lib              
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_slave_translator.sv"                                     -work jtag_uart_0_avalon_jtag_slave_translator     -cdslib ./cds_libs/jtag_uart_0_avalon_jtag_slave_translator.cds.lib    
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_merlin_master_translator.sv"                                    -work nios2_gen2_0_data_master_translator          -cdslib ./cds_libs/nios2_gen2_0_data_master_translator.cds.lib         
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu.v"                                     -work cpu                                          -cdslib ./cds_libs/cpu.cds.lib                                         
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_sysclk.v"                  -work cpu                                          -cdslib ./cds_libs/cpu.cds.lib                                         
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_tck.v"                     -work cpu                                          -cdslib ./cds_libs/cpu.cds.lib                                         
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_debug_slave_wrapper.v"                 -work cpu                                          -cdslib ./cds_libs/cpu.cds.lib                                         
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0_cpu_test_bench.v"                          -work cpu                                          -cdslib ./cds_libs/cpu.cds.lib                                         
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_reset_controller.v"                                             -work rst_controller                               -cdslib ./cds_libs/rst_controller.cds.lib                              
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_reset_synchronizer.v"                                           -work rst_controller                               -cdslib ./cds_libs/rst_controller.cds.lib                              
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_irq_mapper.sv"                                          -work irq_mapper                                   -cdslib ./cds_libs/irq_mapper.cds.lib                                  
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_mm_interconnect_0.v"                                    -work mm_interconnect_0                            -cdslib ./cds_libs/mm_interconnect_0.cds.lib                           
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_onchip_memory2_0.v"                                     -work onchip_memory2_0                             -cdslib ./cds_libs/onchip_memory2_0.cds.lib                            
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_nios2_gen2_0.v"                                         -work nios2_gen2_0                                 -cdslib ./cds_libs/nios2_gen2_0.cds.lib                                
+  ncvlog $USER_DEFINED_COMPILE_OPTIONS      "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake_jtag_uart_0.v"                                          -work jtag_uart_0                                  -cdslib ./cds_libs/jtag_uart_0.cds.lib                                 
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_reset_source.vhd"                                        -work nios_handshake_inst_reset_bfm                -cdslib ./cds_libs/nios_handshake_inst_reset_bfm.cds.lib               
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/altera_avalon_clock_source.vhd"                                        -work nios_handshake_inst_clk_bfm                  -cdslib ./cds_libs/nios_handshake_inst_clk_bfm.cds.lib                 
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/submodules/nios_handshake.vhd"                                                    -work nios_handshake_inst                          -cdslib ./cds_libs/nios_handshake_inst.cds.lib                         
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/nios_handshake_tb/simulation/nios_handshake_tb.vhd"                                                                                                                                                                                      
 fi
 
 # ----------------------------------------

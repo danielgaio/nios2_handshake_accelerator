@@ -13,6 +13,7 @@ DEFINE altera_ver                    ./../libraries/altera_ver/
 DEFINE lpm_ver                       ./../libraries/lpm_ver/                      
 DEFINE sgate_ver                     ./../libraries/sgate_ver/                    
 DEFINE altera_mf_ver                 ./../libraries/altera_mf_ver/                
+DEFINE altera_lnsim_ver              ./../libraries/altera_lnsim_ver/             
 DEFINE cycloneive_ver                ./../libraries/cycloneive_ver/               
 DEFINE altera                        ./../libraries/altera/                       
 DEFINE lpm                           ./../libraries/lpm/                          

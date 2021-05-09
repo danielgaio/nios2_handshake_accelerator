@@ -71,7 +71,7 @@
  <module
    name="nios_handshake_inst_clk_bfm"
    kind="altera_avalon_clock_source"
-   version="20.1"
+   version="16.1"
    enabled="1">
   <parameter name="CLOCK_RATE" value="50000000" />
   <parameter name="CLOCK_UNIT" value="1" />
@@ -79,24 +79,24 @@
  <module
    name="nios_handshake_inst_reset_bfm"
    kind="altera_avalon_reset_source"
-   version="20.1"
+   version="16.1"
    enabled="1">
   <parameter name="ASSERT_HIGH_RESET" value="0" />
   <parameter name="INITIAL_RESET_CYCLES" value="50" />
  </module>
  <connection
    kind="clock"
-   version="20.1"
+   version="16.1"
    start="nios_handshake_inst_clk_bfm.clk"
    end="nios_handshake_inst.clk" />
  <connection
    kind="clock"
-   version="20.1"
+   version="16.1"
    start="nios_handshake_inst_clk_bfm.clk"
    end="nios_handshake_inst_reset_bfm.clk" />
  <connection
    kind="reset"
-   version="20.1"
+   version="16.1"
    start="nios_handshake_inst_reset_bfm.reset"
    end="nios_handshake_inst.reset" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
