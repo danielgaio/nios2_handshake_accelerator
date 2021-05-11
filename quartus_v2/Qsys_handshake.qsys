@@ -6,15 +6,47 @@
    version="1.0"
    description=""
    tags=""
-   categories="" />
+   categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
+   element Qsys_handshake
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
+   element Qsys_handshake
+   {
+      datum _originalDeviceFamily
+      {
+         value = "Cyclone IV E";
+         type = "String";
+      }
+   }
    element clk_0
    {
       datum _sortIndex
       {
          value = "0";
          type = "int";
+      }
+   }
+   element handshake_memory_0
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element handshake_memory_0.avalon_slave
+   {
+      datum baseAddress
+      {
+         value = "12296";
+         type = "String";
       }
    }
    element jtag_uart_0
@@ -79,7 +111,7 @@
  <parameter name="hideFromIPCatalog" value="false" />
  <parameter name="lockedInterfaceDefinition" value="" />
  <parameter name="maxAdditionalLatency" value="1" />
- <parameter name="projectName" value="" />
+ <parameter name="projectName" value="nios_acel_hand.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="testBenchDutName" value="" />
@@ -93,6 +125,13 @@
   <parameter name="clockFrequencyKnown" value="true" />
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="handshake_memory_0"
+   kind="handshake_memory"
+   version="1.0"
+   enabled="1">
+  <parameter name="DATA_WIDTH" value="32" />
  </module>
  <module
    name="jtag_uart_0"
@@ -137,7 +176,7 @@
   <parameter name="dataAddrWidth" value="14" />
   <parameter name="dataMasterHighPerformanceAddrWidth" value="1" />
   <parameter name="dataMasterHighPerformanceMapParam" value="" />
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x1000' end='0x2000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x2800' end='0x3000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x3000' end='0x3008' type='altera_avalon_jtag_uart.avalon_jtag_slave' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x1000' end='0x2000' type='altera_avalon_onchip_memory2.s1' /><slave name='nios2_gen2_0.debug_mem_slave' start='0x2800' end='0x3000' type='altera_nios2_gen2.debug_mem_slave' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x3000' end='0x3008' type='altera_avalon_jtag_uart.avalon_jtag_slave' /><slave name='handshake_memory_0.avalon_slave' start='0x3008' end='0x300C' type='handshake_memory.avalon_slave' /></address-map>]]></parameter>
   <parameter name="data_master_high_performance_paddr_base" value="0" />
   <parameter name="data_master_high_performance_paddr_size" value="0" />
   <parameter name="data_master_paddr_base" value="0" />
@@ -340,6 +379,15 @@
    kind="avalon"
    version="16.1"
    start="nios2_gen2_0.data_master"
+   end="handshake_memory_0.avalon_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x3008" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="16.1"
+   start="nios2_gen2_0.data_master"
    end="nios2_gen2_0.debug_mem_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x2800" />
@@ -380,6 +428,11 @@
    start="clk_0.clk"
    end="onchip_memory2_0.clk1" />
  <connection
+   kind="clock"
+   version="16.1"
+   start="clk_0.clk"
+   end="handshake_memory_0.clock" />
+ <connection
    kind="interrupt"
    version="16.1"
    start="nios2_gen2_0.irq"
@@ -404,6 +457,11 @@
  <connection
    kind="reset"
    version="16.1"
+   start="clk_0.clk_reset"
+   end="handshake_memory_0.reset_sink" />
+ <connection
+   kind="reset"
+   version="16.1"
    start="nios2_gen2_0.debug_reset_request"
    end="nios2_gen2_0.reset" />
  <connection
@@ -416,6 +474,11 @@
    version="16.1"
    start="nios2_gen2_0.debug_reset_request"
    end="onchip_memory2_0.reset1" />
+ <connection
+   kind="reset"
+   version="16.1"
+   start="nios2_gen2_0.debug_reset_request"
+   end="handshake_memory_0.reset_sink" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />

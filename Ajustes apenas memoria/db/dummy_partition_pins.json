@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Output_acel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Output_acel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Output_acel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Output_acel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Output_acel[8]",
+					"strict" : false
+				},
+				{
+					"name" : "Output_acel[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Clock",
+					"strict" : false
+				},
+				{
+					"name" : "Input_acel[11]",
+					"strict" : false
+				},
+				{
+					"name" : "Input_acel[12]",
+					"strict" : false
+				},
+				{
+					"name" : "Input_acel[13]",
+					"strict" : false
+				},
+				{
+					"name" : "Input_acel[14]",
+					"strict" : false
+				},
+				{
+					"name" : "Input_acel[9]",
+					"strict" : false
+				},
+				{
+					"name" : "Input_acel[10]",
+					"strict" : false
+				},
+				{
+					"name" : "Resetn",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

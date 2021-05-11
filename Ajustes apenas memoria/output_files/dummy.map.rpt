@@ -1,0 +1,432 @@
+Analysis & Synthesis report for dummy
+Mon May 10 08:13:47 2021
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |memory_top|memory_state_machine:my_memory_fsm|state
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |memory_top
+ 13. Parameter Settings for User Entity Instance: memory:my_memory
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon May 10 08:13:47 2021       ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                      ; dummy                                       ;
+; Top-level Entity Name              ; memory_top                                  ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 17                                          ;
+;     Total combinational functions  ; 9                                           ;
+;     Dedicated logic registers      ; 12                                          ;
+; Total registers                    ; 12                                          ;
+; Total pins                         ; 68                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; memory_top         ; dummy              ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
+; memory_top.vhd                   ; yes             ; User VHDL File  ; C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd           ;         ;
+; memory_state_machine.vhd         ; yes             ; User VHDL File  ; C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd ;         ;
+; memory.vhd                       ; yes             ; User VHDL File  ; C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory.vhd               ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 17          ;
+;                                             ;             ;
+; Total combinational functions               ; 9           ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 1           ;
+;     -- 3 input functions                    ; 5           ;
+;     -- <=2 input functions                  ; 3           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 9           ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 12          ;
+;     -- Dedicated logic registers            ; 12          ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 68          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; Clock~input ;
+; Maximum fan-out                             ; 12          ;
+; Total fan-out                               ; 135         ;
+; Average fan-out                             ; 0.86        ;
++---------------------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                       ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------+----------------------+--------------+
+; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                            ; Entity Name          ; Library Name ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------+----------------------+--------------+
+; |memory_top                             ; 9 (0)               ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 68   ; 0            ; |memory_top                                    ; memory_top           ; work         ;
+;    |memory:my_memory|                   ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_top|memory:my_memory                   ; memory               ; work         ;
+;    |memory_state_machine:my_memory_fsm| ; 8 (8)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |memory_top|memory_state_machine:my_memory_fsm ; memory_state_machine ; work         ;
++-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------+
+; State Machine - |memory_top|memory_state_machine:my_memory_fsm|state ;
++----------+----------+----------+----------+--------------------------+
+; Name     ; state.s3 ; state.s2 ; state.s1 ; state.s0                 ;
++----------+----------+----------+----------+--------------------------+
+; state.s0 ; 0        ; 0        ; 0        ; 0                        ;
+; state.s1 ; 0        ; 0        ; 1        ; 1                        ;
+; state.s2 ; 0        ; 1        ; 0        ; 1                        ;
+; state.s3 ; 1        ; 0        ; 0        ; 1                        ;
++----------+----------+----------+----------+--------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                           ;
++----------------------------------------------------+-------------------------------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal                             ; Free of Timing Hazards ;
++----------------------------------------------------+-------------------------------------------------+------------------------+
+; memory_state_machine:my_memory_fsm|dado_ptr        ; memory_state_machine:my_memory_fsm|state.s1     ; yes                    ;
+; memory_state_machine:my_memory_fsm|Ack_out_sm      ; memory_state_machine:my_memory_fsm|state.s3     ; yes                    ;
+; memory_state_machine:my_memory_fsm|read_address    ; memory_state_machine:my_memory_fsm|read_address ; yes                    ;
+; memory_state_machine:my_memory_fsm|out_data        ; memory_state_machine:my_memory_fsm|state.s1     ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                                                 ;                        ;
++----------------------------------------------------+-------------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; memory:my_memory|data_out[4..7]       ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 4 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 12    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 8     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |memory_top ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory:my_memory ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; DATA_WIDTH     ; 8     ; Signed Integer                       ;
+; ADDR_WIDTH     ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 68                          ;
+; cycloneiii_ff         ; 12                          ;
+;     CLR               ; 4                           ;
+;     ENA               ; 8                           ;
+; cycloneiii_lcell_comb ; 10                          ;
+;     normal            ; 10                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 3                           ;
+;         3 data inputs ; 5                           ;
+;         4 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 0.67                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Mon May 10 08:13:36 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dummy -c dummy
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file memory_top.vhd
+    Info (12022): Found design unit 1: memory_top-rtl File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 27
+    Info (12023): Found entity 1: memory_top File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file memory_state_machine.vhd
+    Info (12022): Found design unit 1: memory_state_machine-rtl File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd Line: 17
+    Info (12023): Found entity 1: memory_state_machine File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
+    Info (12022): Found design unit 1: memory-rtl File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory.vhd Line: 25
+    Info (12023): Found entity 1: memory File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory.vhd Line: 8
+Info (12127): Elaborating entity "memory_top" for the top level hierarchy
+Warning (10873): Using initial value X (don't care) for net "Output_acel[14..10]" at memory_top.vhd(22) File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+Info (12128): Elaborating entity "memory" for hierarchy "memory:my_memory" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 69
+Info (12128): Elaborating entity "memory_state_machine" for hierarchy "memory_state_machine:my_memory_fsm" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 79
+Warning (10631): VHDL Process Statement warning at memory_state_machine.vhd(57): inferring latch(es) for signal or variable "Ack_out_sm", which holds its previous value in one or more paths through the process File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at memory_state_machine.vhd(57): inferring latch(es) for signal or variable "read_address", which holds its previous value in one or more paths through the process File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at memory_state_machine.vhd(57): inferring latch(es) for signal or variable "dado_ptr", which holds its previous value in one or more paths through the process File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd Line: 57
+Warning (10631): VHDL Process Statement warning at memory_state_machine.vhd(57): inferring latch(es) for signal or variable "out_data", which holds its previous value in one or more paths through the process File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd Line: 57
+Info (10041): Inferred latch for "out_data" at memory_state_machine.vhd(57) File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd Line: 57
+Info (10041): Inferred latch for "dado_ptr" at memory_state_machine.vhd(57) File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd Line: 57
+Info (10041): Inferred latch for "read_address" at memory_state_machine.vhd(57) File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd Line: 57
+Info (10041): Inferred latch for "Ack_out_sm" at memory_state_machine.vhd(57) File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd Line: 57
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "memory:my_memory|ram" is uninferred due to inappropriate RAM size File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory.vhd Line: 47
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "memory_state_machine:my_memory_fsm|out_data" merged with LATCH primitive "memory_state_machine:my_memory_fsm|dado_ptr" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_state_machine.vhd Line: 13
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "Output_acel[4]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[5]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[6]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[7]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[10]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[11]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[12]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[13]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[14]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[15]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[16]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[17]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[18]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[19]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[20]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[21]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[22]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[23]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[24]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[25]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[26]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[27]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[28]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[29]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[30]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+    Warning (13410): Pin "Output_acel[31]" is stuck at GND File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 22
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 28 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "read" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 19
+    Warning (15610): No output dependent on input pin "write" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 20
+    Warning (15610): No output dependent on input pin "Input_acel[0]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[1]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[2]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[3]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[4]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[5]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[6]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[7]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[8]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[15]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[16]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[17]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[18]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[19]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[20]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[21]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[22]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[23]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[24]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[25]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[26]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[27]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[28]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[29]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[30]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+    Warning (15610): No output dependent on input pin "Input_acel[31]" File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/Ajustes apenas memoria/memory_top.vhd Line: 21
+Info (21057): Implemented 85 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 36 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 17 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 62 warnings
+    Info: Peak virtual memory: 4772 megabytes
+    Info: Processing ended: Mon May 10 08:13:47 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:25
+
+

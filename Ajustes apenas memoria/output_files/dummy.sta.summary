@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'memory_state_machine:my_memory_fsm|state.s1'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Setup 'memory_state_machine:my_memory_fsm|state.s3'
+Slack : -0.991
+TNS   : -1.464
+
+Type  : Slow 1200mV 85C Model Setup 'Clock'
+Slack : -0.788
+TNS   : -5.015
+
+Type  : Slow 1200mV 85C Model Hold 'memory_state_machine:my_memory_fsm|state.s3'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Clock'
+Slack : 0.371
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'memory_state_machine:my_memory_fsm|state.s1'
+Slack : 1.456
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -15.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'memory_state_machine:my_memory_fsm|state.s3'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'memory_state_machine:my_memory_fsm|state.s1'
+Slack : 0.422
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'memory_state_machine:my_memory_fsm|state.s1'
+Slack : -1.285
+TNS   : -1.285
+
+Type  : Slow 1200mV 0C Model Setup 'memory_state_machine:my_memory_fsm|state.s3'
+Slack : -0.830
+TNS   : -1.193
+
+Type  : Slow 1200mV 0C Model Setup 'Clock'
+Slack : -0.606
+TNS   : -3.470
+
+Type  : Slow 1200mV 0C Model Hold 'memory_state_machine:my_memory_fsm|state.s3'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Clock'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'memory_state_machine:my_memory_fsm|state.s1'
+Slack : 1.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -15.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'memory_state_machine:my_memory_fsm|state.s3'
+Slack : 0.390
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'memory_state_machine:my_memory_fsm|state.s1'
+Slack : 0.432
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'memory_state_machine:my_memory_fsm|state.s1'
+Slack : -0.393
+TNS   : -0.393
+
+Type  : Fast 1200mV 0C Model Setup 'memory_state_machine:my_memory_fsm|state.s3'
+Slack : -0.358
+TNS   : -0.427
+
+Type  : Fast 1200mV 0C Model Setup 'Clock'
+Slack : -0.320
+TNS   : -0.622
+
+Type  : Fast 1200mV 0C Model Hold 'memory_state_machine:my_memory_fsm|state.s3'
+Slack : 0.085
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Clock'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'memory_state_machine:my_memory_fsm|state.s1'
+Slack : 0.796
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clock'
+Slack : -3.000
+TNS   : -15.751
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'memory_state_machine:my_memory_fsm|state.s3'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'memory_state_machine:my_memory_fsm|state.s1'
+Slack : 0.459
+TNS   : 0.000
+
+------------------------------------------------------------

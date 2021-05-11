@@ -4,6 +4,8 @@ Progress: Loading quartus_v2/Qsys_handshake.qsys
 Progress: Reading input file
 Progress: Adding clk_0 [clock_source 16.1]
 Progress: Parameterizing module clk_0
+Progress: Adding handshake_memory_0 [handshake_memory 1.0]
+Progress: Parameterizing module handshake_memory_0
 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.1]
 Progress: Parameterizing module jtag_uart_0
 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 16.1]
@@ -14,38 +16,41 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Warning: Qsys_handshake.handshake_memory: The SIM_VHDL fileset must specify the top-level module name.
 Info: Qsys_handshake.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: Qsys_handshake: Generating Qsys_handshake "Qsys_handshake" for SIM_VHDL
+Info: handshake_memory_0: "Qsys_handshake" instantiated handshake_memory "handshake_memory_0"
 Info: jtag_uart_0: Starting RTL generation for module 'Qsys_handshake_jtag_uart_0'
-Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Qsys_handshake_jtag_uart_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0001_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0001_jtag_uart_0_gen//Qsys_handshake_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0001_jtag_uart_0_gen/  ]
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Qsys_handshake_jtag_uart_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0419_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0419_jtag_uart_0_gen//Qsys_handshake_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0419_jtag_uart_0_gen/  ]
 Info: jtag_uart_0: Done RTL generation for module 'Qsys_handshake_jtag_uart_0'
 Info: jtag_uart_0: "Qsys_handshake" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info: nios2_gen2_0: "Qsys_handshake" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info: onchip_memory2_0: Starting RTL generation for module 'Qsys_handshake_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Qsys_handshake_onchip_memory2_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0002_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0002_onchip_memory2_0_gen//Qsys_handshake_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0002_onchip_memory2_0_gen/  ]
+Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Qsys_handshake_onchip_memory2_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0420_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0420_onchip_memory2_0_gen//Qsys_handshake_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0420_onchip_memory2_0_gen/  ]
 Info: onchip_memory2_0: Done RTL generation for module 'Qsys_handshake_onchip_memory2_0'
 Info: onchip_memory2_0: "Qsys_handshake" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "Qsys_handshake" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "Qsys_handshake" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "Qsys_handshake" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'Qsys_handshake_nios2_gen2_0_cpu'
-Info: cpu:   Generation command is [exec C:/intelFPGA_lite/16.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Qsys_handshake_nios2_gen2_0_cpu --dir=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0005_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/16.1/quartus/bin64/ --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0005_cpu_gen//Qsys_handshake_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0005_cpu_gen/  ]
-Info: cpu: # 2021.05.09 19:15:05 (*) Starting Nios II generation
-Info: cpu: # 2021.05.09 19:15:05 (*)   Checking for plaintext license.
-Info: cpu: # 2021.05.09 19:15:06 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/16.1/quartus/bin64/
-Info: cpu: # 2021.05.09 19:15:06 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info: cpu: # 2021.05.09 19:15:06 (*)   LM_LICENSE_FILE environment variable is empty
-Info: cpu: # 2021.05.09 19:15:06 (*)   Plaintext license not found.
-Info: cpu: # 2021.05.09 19:15:06 (*)   No license required to generate encrypted Nios II/e.
-Info: cpu: # 2021.05.09 19:15:06 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2021.05.09 19:15:06 (*)   Creating all objects for CPU
-Info: cpu: # 2021.05.09 19:15:07 (*)   Creating 'C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0005_cpu_gen//Qsys_handshake_nios2_gen2_0_cpu_nios2_waves.do'
-Info: cpu: # 2021.05.09 19:15:07 (*)   Generating RTL from CPU objects
-Info: cpu: # 2021.05.09 19:15:07 (*)   Creating plain-text RTL
-Info: cpu: # 2021.05.09 19:15:08 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/16.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Qsys_handshake_nios2_gen2_0_cpu --dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0423_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/16.1/quartus/bin64/ --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0423_cpu_gen//Qsys_handshake_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0423_cpu_gen/  ]
+Info: cpu: # 2021.05.10 23:34:57 (*) Starting Nios II generation
+Info: cpu: # 2021.05.10 23:34:57 (*)   Checking for plaintext license.
+Info: cpu: # 2021.05.10 23:34:58 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/16.1/quartus/bin64/
+Info: cpu: # 2021.05.10 23:34:58 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2021.05.10 23:34:58 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2021.05.10 23:34:58 (*)   Plaintext license not found.
+Info: cpu: # 2021.05.10 23:34:58 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2021.05.10 23:34:58 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2021.05.10 23:34:58 (*)   Creating all objects for CPU
+Info: cpu: # 2021.05.10 23:34:59 (*)   Creating 'C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0423_cpu_gen//Qsys_handshake_nios2_gen2_0_cpu_nios2_waves.do'
+Info: cpu: # 2021.05.10 23:34:59 (*)   Generating RTL from CPU objects
+Info: cpu: # 2021.05.10 23:34:59 (*)   Creating plain-text RTL
+Info: cpu: # 2021.05.10 23:35:00 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'Qsys_handshake_nios2_gen2_0_cpu'
 Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -56,11 +61,11 @@ Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instanti
 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
-Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
-Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
 Info: Reusing file C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/simulation/submodules/altera_merlin_arbitrator.sv
 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
@@ -69,7 +74,7 @@ Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "r
 Info: Reusing file C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/simulation/submodules/altera_merlin_arbitrator.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: Qsys_handshake: Done "Qsys_handshake" with 26 modules, 46 files
+Info: Qsys_handshake: Done "Qsys_handshake" with 27 modules, 49 files
 Info: qsys-generate succeeded.
 Info: Finished: Create simulation model
 Info: Starting: Create Modelsim Project.
@@ -85,7 +90,7 @@ Info: Generating the following file(s) for NCSIM simulator in C:/Users/danie/Doc
 Info: 	cadence/cds.lib
 Info: 	cadence/hdl.var
 Info: 	cadence/ncsim_setup.sh
-Info: 	25 .cds.lib files in cadence/cds_libs/ directory
+Info: 	26 .cds.lib files in cadence/cds_libs/ directory
 Info: Generating the following file(s) for RIVIERA simulator in C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/simulation/ directory:
 Info: 	aldec/rivierapro_setup.tcl
 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/simulation/.
@@ -97,6 +102,8 @@ Progress: Loading quartus_v2/Qsys_handshake.qsys
 Progress: Reading input file
 Progress: Adding clk_0 [clock_source 16.1]
 Progress: Parameterizing module clk_0
+Progress: Adding handshake_memory_0 [handshake_memory 1.0]
+Progress: Parameterizing module handshake_memory_0
 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.1]
 Progress: Parameterizing module jtag_uart_0
 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 16.1]
@@ -107,6 +114,7 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Warning: Qsys_handshake.handshake_memory: The SIM_VHDL fileset must specify the top-level module name.
 Info: Qsys_handshake.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
@@ -117,6 +125,8 @@ Progress: Loading quartus_v2/Qsys_handshake.qsys
 Progress: Reading input file
 Progress: Adding clk_0 [clock_source 16.1]
 Progress: Parameterizing module clk_0
+Progress: Adding handshake_memory_0 [handshake_memory 1.0]
+Progress: Parameterizing module handshake_memory_0
 Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.1]
 Progress: Parameterizing module jtag_uart_0
 Progress: Adding nios2_gen2_0 [altera_nios2_gen2 16.1]
@@ -127,37 +137,40 @@ Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Warning: Qsys_handshake.handshake_memory: The SIM_VHDL fileset must specify the top-level module name.
 Info: Qsys_handshake.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
 Info: Qsys_handshake: Generating Qsys_handshake "Qsys_handshake" for QUARTUS_SYNTH
+Info: handshake_memory_0: "Qsys_handshake" instantiated handshake_memory "handshake_memory_0"
 Info: jtag_uart_0: Starting RTL generation for module 'Qsys_handshake_jtag_uart_0'
-Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Qsys_handshake_jtag_uart_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0024_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0024_jtag_uart_0_gen//Qsys_handshake_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Qsys_handshake_jtag_uart_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0443_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0443_jtag_uart_0_gen//Qsys_handshake_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
 Info: jtag_uart_0: Done RTL generation for module 'Qsys_handshake_jtag_uart_0'
 Info: jtag_uart_0: "Qsys_handshake" instantiated altera_avalon_jtag_uart "jtag_uart_0"
 Info: nios2_gen2_0: "Qsys_handshake" instantiated altera_nios2_gen2 "nios2_gen2_0"
 Info: onchip_memory2_0: Starting RTL generation for module 'Qsys_handshake_onchip_memory2_0'
-Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Qsys_handshake_onchip_memory2_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0025_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0025_onchip_memory2_0_gen//Qsys_handshake_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Qsys_handshake_onchip_memory2_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0444_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0444_onchip_memory2_0_gen//Qsys_handshake_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
 Info: onchip_memory2_0: Done RTL generation for module 'Qsys_handshake_onchip_memory2_0'
 Info: onchip_memory2_0: "Qsys_handshake" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
 Info: mm_interconnect_0: "Qsys_handshake" instantiated altera_mm_interconnect "mm_interconnect_0"
 Info: irq_mapper: "Qsys_handshake" instantiated altera_irq_mapper "irq_mapper"
 Info: rst_controller: "Qsys_handshake" instantiated altera_reset_controller "rst_controller"
 Info: cpu: Starting RTL generation for module 'Qsys_handshake_nios2_gen2_0_cpu'
-Info: cpu:   Generation command is [exec C:/intelFPGA_lite/16.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Qsys_handshake_nios2_gen2_0_cpu --dir=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0028_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/16.1/quartus/bin64/ --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8756_83114285798887917.dir/0028_cpu_gen//Qsys_handshake_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
-Info: cpu: # 2021.05.09 19:15:28 (*) Starting Nios II generation
-Info: cpu: # 2021.05.09 19:15:28 (*)   Checking for plaintext license.
-Info: cpu: # 2021.05.09 19:15:29 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/16.1/quartus/bin64/
-Info: cpu: # 2021.05.09 19:15:29 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
-Info: cpu: # 2021.05.09 19:15:29 (*)   LM_LICENSE_FILE environment variable is empty
-Info: cpu: # 2021.05.09 19:15:29 (*)   Plaintext license not found.
-Info: cpu: # 2021.05.09 19:15:29 (*)   No license required to generate encrypted Nios II/e.
-Info: cpu: # 2021.05.09 19:15:29 (*)   Elaborating CPU configuration settings
-Info: cpu: # 2021.05.09 19:15:29 (*)   Creating all objects for CPU
-Info: cpu: # 2021.05.09 19:15:30 (*)   Generating RTL from CPU objects
-Info: cpu: # 2021.05.09 19:15:30 (*)   Creating plain-text RTL
-Info: cpu: # 2021.05.09 19:15:31 (*) Done Nios II generation
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/16.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Qsys_handshake_nios2_gen2_0_cpu --dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0447_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/16.1/quartus/bin64/ --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0447_cpu_gen//Qsys_handshake_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2021.05.10 23:35:21 (*) Starting Nios II generation
+Info: cpu: # 2021.05.10 23:35:21 (*)   Checking for plaintext license.
+Info: cpu: # 2021.05.10 23:35:22 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/16.1/quartus/bin64/
+Info: cpu: # 2021.05.10 23:35:22 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2021.05.10 23:35:22 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2021.05.10 23:35:22 (*)   Plaintext license not found.
+Info: cpu: # 2021.05.10 23:35:22 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2021.05.10 23:35:22 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2021.05.10 23:35:22 (*)   Creating all objects for CPU
+Info: cpu: # 2021.05.10 23:35:23 (*)   Generating RTL from CPU objects
+Info: cpu: # 2021.05.10 23:35:23 (*)   Creating plain-text RTL
+Info: cpu: # 2021.05.10 23:35:24 (*) Done Nios II generation
 Info: cpu: Done RTL generation for module 'Qsys_handshake_nios2_gen2_0_cpu'
 Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
 Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
@@ -168,11 +181,11 @@ Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instanti
 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
-Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
-Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
 Info: Reusing file C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
@@ -181,6 +194,6 @@ Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "r
 Info: Reusing file C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/synthesis/submodules/altera_merlin_arbitrator.sv
 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
-Info: Qsys_handshake: Done "Qsys_handshake" with 26 modules, 39 files
+Info: Qsys_handshake: Done "Qsys_handshake" with 27 modules, 42 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

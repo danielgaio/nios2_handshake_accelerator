@@ -14,11 +14,11 @@ DEFINE avalon_st_adapter                            ./libraries/avalon_st_adapte
 DEFINE rsp_mux_001                                  ./libraries/rsp_mux_001/                                 
 DEFINE rsp_mux                                      ./libraries/rsp_mux/                                     
 DEFINE rsp_demux                                    ./libraries/rsp_demux/                                   
-DEFINE cmd_mux_001                                  ./libraries/cmd_mux_001/                                 
+DEFINE cmd_mux_002                                  ./libraries/cmd_mux_002/                                 
 DEFINE cmd_mux                                      ./libraries/cmd_mux/                                     
 DEFINE cmd_demux_001                                ./libraries/cmd_demux_001/                               
 DEFINE cmd_demux                                    ./libraries/cmd_demux/                                   
-DEFINE router_003                                   ./libraries/router_003/                                  
+DEFINE router_004                                   ./libraries/router_004/                                  
 DEFINE router_002                                   ./libraries/router_002/                                  
 DEFINE router_001                                   ./libraries/router_001/                                  
 DEFINE router                                       ./libraries/router/                                      
@@ -34,6 +34,7 @@ DEFINE mm_interconnect_0                            ./libraries/mm_interconnect_
 DEFINE onchip_memory2_0                             ./libraries/onchip_memory2_0/                            
 DEFINE nios2_gen2_0                                 ./libraries/nios2_gen2_0/                                
 DEFINE jtag_uart_0                                  ./libraries/jtag_uart_0/                                 
+DEFINE handshake_memory_0                           ./libraries/handshake_memory_0/                          
 DEFINE Qsys_handshake_inst_reset_bfm                ./libraries/Qsys_handshake_inst_reset_bfm/               
 DEFINE Qsys_handshake_inst_clk_bfm                  ./libraries/Qsys_handshake_inst_clk_bfm/                 
 DEFINE Qsys_handshake_inst                          ./libraries/Qsys_handshake_inst/                         

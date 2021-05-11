@@ -29,13 +29,13 @@
    type="SYSTEM_VERILOG"
    library="rsp_demux" />
  <file
-   path="simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux_001.sv"
+   path="simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux_002.sv"
    type="SYSTEM_VERILOG"
-   library="cmd_mux_001" />
+   library="cmd_mux_002" />
  <file
    path="simulation/submodules/altera_merlin_arbitrator.sv"
    type="SYSTEM_VERILOG"
-   library="cmd_mux_001" />
+   library="cmd_mux_002" />
  <file
    path="simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux.sv"
    type="SYSTEM_VERILOG"
@@ -53,9 +53,9 @@
    type="SYSTEM_VERILOG"
    library="cmd_demux" />
  <file
-   path="simulation/submodules/Qsys_handshake_mm_interconnect_0_router_003.sv"
+   path="simulation/submodules/Qsys_handshake_mm_interconnect_0_router_004.sv"
    type="SYSTEM_VERILOG"
-   library="router_003" />
+   library="router_004" />
  <file
    path="simulation/submodules/Qsys_handshake_mm_interconnect_0_router_002.sv"
    type="SYSTEM_VERILOG"
@@ -192,6 +192,18 @@
    path="simulation/submodules/Qsys_handshake_jtag_uart_0.v"
    type="VERILOG"
    library="jtag_uart_0" />
+ <file
+   path="simulation/submodules/memory.vhd"
+   type="VHDL"
+   library="handshake_memory_0" />
+ <file
+   path="simulation/submodules/memory_state_machine.vhd"
+   type="VHDL"
+   library="handshake_memory_0" />
+ <file
+   path="simulation/submodules/memory_top.vhd"
+   type="VHDL"
+   library="handshake_memory_0" />
  <file path="simulation/Qsys_handshake.vhd" type="VHDL" />
  <topLevel name="Qsys_handshake" />
  <deviceFamily name="cycloneive" />

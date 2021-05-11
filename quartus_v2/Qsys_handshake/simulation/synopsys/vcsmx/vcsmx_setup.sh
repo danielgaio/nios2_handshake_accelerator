@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 16.1 196 win32 2021.05.09.19:15:11
+# ACDS 16.1 196 win32 2021.05.10.23:35:02
 
 # ----------------------------------------
 # vcsmx - auto-generated simulation script
@@ -101,7 +101,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 16.1 196 win32 2021.05.09.19:15:11
+# ACDS 16.1 196 win32 2021.05.10.23:35:02
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="Qsys_handshake"
@@ -146,11 +146,11 @@ mkdir -p ./libraries/avalon_st_adapter/
 mkdir -p ./libraries/rsp_mux_001/
 mkdir -p ./libraries/rsp_mux/
 mkdir -p ./libraries/rsp_demux/
-mkdir -p ./libraries/cmd_mux_001/
+mkdir -p ./libraries/cmd_mux_002/
 mkdir -p ./libraries/cmd_mux/
 mkdir -p ./libraries/cmd_demux_001/
 mkdir -p ./libraries/cmd_demux/
-mkdir -p ./libraries/router_003/
+mkdir -p ./libraries/router_004/
 mkdir -p ./libraries/router_002/
 mkdir -p ./libraries/router_001/
 mkdir -p ./libraries/router/
@@ -166,6 +166,7 @@ mkdir -p ./libraries/mm_interconnect_0/
 mkdir -p ./libraries/onchip_memory2_0/
 mkdir -p ./libraries/nios2_gen2_0/
 mkdir -p ./libraries/jtag_uart_0/
+mkdir -p ./libraries/handshake_memory_0/
 mkdir -p ./libraries/altera_ver/
 mkdir -p ./libraries/lpm_ver/
 mkdir -p ./libraries/sgate_ver/
@@ -230,13 +231,13 @@ if [ $SKIP_COM -eq 0 ]; then
   vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                                     
   vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                                           -work rsp_mux                                     
   vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                                   
-  vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux_001.sv"                       -work cmd_mux_001                                 
-  vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux_001                                 
+  vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux_002.sv"                       -work cmd_mux_002                                 
+  vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux_002                                 
   vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                                     
   vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux                                     
   vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_cmd_demux_001.sv"                     -work cmd_demux_001                               
   vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                                   
-  vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_router_003.sv"                        -work router_003                                  
+  vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_router_004.sv"                        -work router_004                                  
   vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_router_002.sv"                        -work router_002                                  
   vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_router_001.sv"                        -work router_001                                  
   vlogan +v2k -sverilog $USER_DEFINED_COMPILE_OPTIONS "$QSYS_SIMDIR/submodules/Qsys_handshake_mm_interconnect_0_router.sv"                            -work router                                      
@@ -258,6 +259,9 @@ if [ $SKIP_COM -eq 0 ]; then
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Qsys_handshake_onchip_memory2_0.v"                                     -work onchip_memory2_0                            
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Qsys_handshake_nios2_gen2_0.v"                                         -work nios2_gen2_0                                
   vlogan +v2k $USER_DEFINED_COMPILE_OPTIONS           "$QSYS_SIMDIR/submodules/Qsys_handshake_jtag_uart_0.v"                                          -work jtag_uart_0                                 
+  vhdlan -xlrm $USER_DEFINED_COMPILE_OPTIONS          "$QSYS_SIMDIR/submodules/memory.vhd"                                                            -work handshake_memory_0                          
+  vhdlan -xlrm $USER_DEFINED_COMPILE_OPTIONS          "$QSYS_SIMDIR/submodules/memory_state_machine.vhd"                                              -work handshake_memory_0                          
+  vhdlan -xlrm $USER_DEFINED_COMPILE_OPTIONS          "$QSYS_SIMDIR/submodules/memory_top.vhd"                                                        -work handshake_memory_0                          
   vhdlan -xlrm $USER_DEFINED_COMPILE_OPTIONS          "$QSYS_SIMDIR/Qsys_handshake.vhd"                                                                                                                 
 fi
 

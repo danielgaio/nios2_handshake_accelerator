@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 16.1 196 win32 2021.05.09.19:22:15
+# ACDS 16.1 196 win32 2021.05.10.22:37:48
 
 # ----------------------------------------
 # ncsim - auto-generated simulation script
@@ -101,7 +101,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 16.1 196 win32 2021.05.09.19:22:15
+# ACDS 16.1 196 win32 2021.05.10.22:37:48
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="Qsys_handshake_tb"
@@ -146,11 +146,11 @@ mkdir -p ./libraries/avalon_st_adapter/
 mkdir -p ./libraries/rsp_mux_001/
 mkdir -p ./libraries/rsp_mux/
 mkdir -p ./libraries/rsp_demux/
-mkdir -p ./libraries/cmd_mux_001/
+mkdir -p ./libraries/cmd_mux_002/
 mkdir -p ./libraries/cmd_mux/
 mkdir -p ./libraries/cmd_demux_001/
 mkdir -p ./libraries/cmd_demux/
-mkdir -p ./libraries/router_003/
+mkdir -p ./libraries/router_004/
 mkdir -p ./libraries/router_002/
 mkdir -p ./libraries/router_001/
 mkdir -p ./libraries/router/
@@ -166,6 +166,7 @@ mkdir -p ./libraries/mm_interconnect_0/
 mkdir -p ./libraries/onchip_memory2_0/
 mkdir -p ./libraries/nios2_gen2_0/
 mkdir -p ./libraries/jtag_uart_0/
+mkdir -p ./libraries/handshake_memory_0/
 mkdir -p ./libraries/Qsys_handshake_inst_reset_bfm/
 mkdir -p ./libraries/Qsys_handshake_inst_clk_bfm/
 mkdir -p ./libraries/Qsys_handshake_inst/
@@ -233,13 +234,13 @@ if [ $SKIP_COM -eq 0 ]; then
   ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_rsp_mux.sv"                           -work rsp_mux                                      -cdslib ./cds_libs/rsp_mux.cds.lib                                     
   ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work rsp_mux                                      -cdslib ./cds_libs/rsp_mux.cds.lib                                     
   ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_rsp_demux.sv"                         -work rsp_demux                                    -cdslib ./cds_libs/rsp_demux.cds.lib                                   
-  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux_001.sv"                       -work cmd_mux_001                                  -cdslib ./cds_libs/cmd_mux_001.cds.lib                                 
-  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux_001                                  -cdslib ./cds_libs/cmd_mux_001.cds.lib                                 
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux_002.sv"                       -work cmd_mux_002                                  -cdslib ./cds_libs/cmd_mux_002.cds.lib                                 
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux_002                                  -cdslib ./cds_libs/cmd_mux_002.cds.lib                                 
   ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux.sv"                           -work cmd_mux                                      -cdslib ./cds_libs/cmd_mux.cds.lib                                     
   ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv"                                           -work cmd_mux                                      -cdslib ./cds_libs/cmd_mux.cds.lib                                     
   ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_demux_001.sv"                     -work cmd_demux_001                                -cdslib ./cds_libs/cmd_demux_001.cds.lib                               
   ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_demux.sv"                         -work cmd_demux                                    -cdslib ./cds_libs/cmd_demux.cds.lib                                   
-  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_router_003.sv"                        -work router_003                                   -cdslib ./cds_libs/router_003.cds.lib                                  
+  ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_router_004.sv"                        -work router_004                                   -cdslib ./cds_libs/router_004.cds.lib                                  
   ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_router_002.sv"                        -work router_002                                   -cdslib ./cds_libs/router_002.cds.lib                                  
   ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_router_001.sv"                        -work router_001                                   -cdslib ./cds_libs/router_001.cds.lib                                  
   ncvlog -sv $USER_DEFINED_COMPILE_OPTIONS  "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_router.sv"                            -work router                                       -cdslib ./cds_libs/router.cds.lib                                      
@@ -261,6 +262,9 @@ if [ $SKIP_COM -eq 0 ]; then
   ncvlog $USER_DEFINED_COMPILE_OPTIONS      "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_onchip_memory2_0.v"                                     -work onchip_memory2_0                             -cdslib ./cds_libs/onchip_memory2_0.cds.lib                            
   ncvlog $USER_DEFINED_COMPILE_OPTIONS      "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0.v"                                         -work nios2_gen2_0                                 -cdslib ./cds_libs/nios2_gen2_0.cds.lib                                
   ncvlog $USER_DEFINED_COMPILE_OPTIONS      "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_jtag_uart_0.v"                                          -work jtag_uart_0                                  -cdslib ./cds_libs/jtag_uart_0.cds.lib                                 
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/memory.vhd"                                                            -work handshake_memory_0                           -cdslib ./cds_libs/handshake_memory_0.cds.lib                          
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/memory_state_machine.vhd"                                              -work handshake_memory_0                           -cdslib ./cds_libs/handshake_memory_0.cds.lib                          
+  ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/memory_top.vhd"                                                        -work handshake_memory_0                           -cdslib ./cds_libs/handshake_memory_0.cds.lib                          
   ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_avalon_reset_source.vhd"                                        -work Qsys_handshake_inst_reset_bfm                -cdslib ./cds_libs/Qsys_handshake_inst_reset_bfm.cds.lib               
   ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_avalon_clock_source.vhd"                                        -work Qsys_handshake_inst_clk_bfm                  -cdslib ./cds_libs/Qsys_handshake_inst_clk_bfm.cds.lib                 
   ncvhdl -v93 $USER_DEFINED_COMPILE_OPTIONS "C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake.vhd"                                                    -work Qsys_handshake_inst                          -cdslib ./cds_libs/Qsys_handshake_inst.cds.lib                         

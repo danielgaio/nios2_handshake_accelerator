@@ -78,14 +78,75 @@
  *
  */
 
-#include "sys/alt_stdio.h"
+//#include "sys/alt_stdio.h"
+#include <stdio.h>
+#include <io.h>
+#include <system.h>
 
-int main()
-{ 
-  alt_putstr("Hello from Nios II!\n");
+int main(){
 
-  /* Event loop never exits. */
-  while (1);
+	printf("Start computing!\n");
 
-  return 0;
+	unsigned int from_acel = 0;
+
+	//unsigned int req_leit = 512;	// req_leit = 1
+	unsigned int address = 3;
+	//unsigned int ack;
+	//unsigned int dado_ptr;
+
+	// requisita leitura (write implicito) e manda endereço
+	//IOWR(HANDSHAKE_MEMORY_0_BASE, 0, req_leit);
+	IOWR(HANDSHAKE_MEMORY_0_BASE, 0, address);
+
+	// espera bit[9] ack ligar
+	while ((from_acel = IORD(HANDSHAKE_MEMORY_0_BASE, 0)) <= 128);
+	//ack = (int)from_acel - 256;
+
+	// baixa req leit
+	//req_leit = 0;	// req_leit = 0
+	//IOWR(HANDSHAKE_MEMORY_0_BASE, 0, );
+
+	// espera bit[8] dado_ptr ligar
+
+	//****
+	//while ((from_acel = IORD(HANDSHAKE_MEMORY_0_BASE, 0)) <= 256);
+	//****
+
+	//****
+	printf("Dado lido da memoria handshake: %u\n", (int)from_acel - 128);
+	//****
+
+	printf("End computing!\n");
+
+	// ligar ack
+	//ack = 256;	// ack = 1
+
+	// esperar dado_ptr baixar
+	//while ((from_acel = IORD(HANDSHAKE_MEMORY_0_BASE, 0)) < 128);
+
+	// desligar ack
+	//ack = 0;	// ack = 1
+	//IOWR(HANDSHAKE_MEMORY_0_BASE, 0, ack);
+
+	//unsigned int Op2 = 3;
+
+	//unsigned int from_acel = 0;
+
+	//printf("Start computing!\n");
+
+	//IOWR(MULTCOMBWITHRESET_0_BASE, 0, Op1);
+
+	//IOWR(MULTCOMBWITHRESET_0_BASE, 0, Op2);
+
+	//while ((from_acel = IORD(MULTCOMBWITHRESET_0_BASE, 0)) < 128);
+
+	//unsigned int respWithoutMSB = (int)from_acel - 128;
+				   //respWithoutMSB = respWithoutMSB & 255;
+	//unsigned int respWithMSB 	  = from_acel & 255;
+
+	//printf("Complete (32 bits) final result from accelerator: %u\n", from_acel);
+	//printf("8 bit result (DataReady & multiplier output): %u\n", respWithMSB);
+	//printf("7 bit result (only multiplier output): %u\n", respWithoutMSB);
+	return 0;
+
 }

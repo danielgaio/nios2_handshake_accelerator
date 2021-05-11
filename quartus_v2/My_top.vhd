@@ -16,15 +16,15 @@ end entity;
 architecture rtl of My_top is
 
 	-- Nome do arquivo .qip
-	component nios_handshake_acel is
+	component Qsys_handshake is
 		port (
 			clk_clk       : in std_logic := '0';
 			reset_reset_n : in std_logic := '0'
 		);
-	end component MySoC;
+	end component Qsys_handshake;
 
 begin
 
-Label_SoC: nios_handshake_acel port map (clk_clk => OSC_CLK, reset_reset_n => RESET_N);
+Label_SoC: Qsys_handshake port map (clk_clk => OSC_CLK, reset_reset_n => RESET_N);
 
 end rtl;

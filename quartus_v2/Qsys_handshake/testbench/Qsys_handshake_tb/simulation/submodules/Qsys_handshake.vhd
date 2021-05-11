@@ -14,6 +14,20 @@ entity Qsys_handshake is
 end entity Qsys_handshake;
 
 architecture rtl of Qsys_handshake is
+	component Qsys_handshake_handshake_memory_0 is
+		generic (
+			DATA_WIDTH : integer := 32
+		);
+		port (
+			Clock       : in  std_logic                     := 'X';             -- clk
+			Resetn      : in  std_logic                     := 'X';             -- reset_n
+			read        : in  std_logic                     := 'X';             -- read
+			write       : in  std_logic                     := 'X';             -- write
+			Input_acel  : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			Output_acel : out std_logic_vector(31 downto 0)                     -- readdata
+		);
+	end component Qsys_handshake_handshake_memory_0;
+
 	component Qsys_handshake_jtag_uart_0 is
 		port (
 			clk            : in  std_logic                     := 'X';             -- clk
@@ -92,6 +106,10 @@ architecture rtl of Qsys_handshake is
 			nios2_gen2_0_instruction_master_waitrequest    : out std_logic;                                        -- waitrequest
 			nios2_gen2_0_instruction_master_read           : in  std_logic                     := 'X';             -- read
 			nios2_gen2_0_instruction_master_readdata       : out std_logic_vector(31 downto 0);                    -- readdata
+			handshake_memory_0_avalon_slave_write          : out std_logic;                                        -- write
+			handshake_memory_0_avalon_slave_read           : out std_logic;                                        -- read
+			handshake_memory_0_avalon_slave_readdata       : in  std_logic_vector(31 downto 0) := (others => 'X'); -- readdata
+			handshake_memory_0_avalon_slave_writedata      : out std_logic_vector(31 downto 0);                    -- writedata
 			jtag_uart_0_avalon_jtag_slave_address          : out std_logic_vector(0 downto 0);                     -- address
 			jtag_uart_0_avalon_jtag_slave_write            : out std_logic;                                        -- write
 			jtag_uart_0_avalon_jtag_slave_read             : out std_logic;                                        -- read
@@ -211,6 +229,10 @@ architecture rtl of Qsys_handshake is
 	signal mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read            : std_logic;                     -- mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_read -> mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read:in
 	signal mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write           : std_logic;                     -- mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_write -> mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write:in
 	signal mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_writedata       : std_logic_vector(31 downto 0); -- mm_interconnect_0:jtag_uart_0_avalon_jtag_slave_writedata -> jtag_uart_0:av_writedata
+	signal mm_interconnect_0_handshake_memory_0_avalon_slave_readdata      : std_logic_vector(31 downto 0); -- handshake_memory_0:Output_acel -> mm_interconnect_0:handshake_memory_0_avalon_slave_readdata
+	signal mm_interconnect_0_handshake_memory_0_avalon_slave_read          : std_logic;                     -- mm_interconnect_0:handshake_memory_0_avalon_slave_read -> handshake_memory_0:read
+	signal mm_interconnect_0_handshake_memory_0_avalon_slave_write         : std_logic;                     -- mm_interconnect_0:handshake_memory_0_avalon_slave_write -> handshake_memory_0:write
+	signal mm_interconnect_0_handshake_memory_0_avalon_slave_writedata     : std_logic_vector(31 downto 0); -- mm_interconnect_0:handshake_memory_0_avalon_slave_writedata -> handshake_memory_0:Input_acel
 	signal mm_interconnect_0_nios2_gen2_0_debug_mem_slave_readdata         : std_logic_vector(31 downto 0); -- nios2_gen2_0:debug_mem_slave_readdata -> mm_interconnect_0:nios2_gen2_0_debug_mem_slave_readdata
 	signal mm_interconnect_0_nios2_gen2_0_debug_mem_slave_waitrequest      : std_logic;                     -- nios2_gen2_0:debug_mem_slave_waitrequest -> mm_interconnect_0:nios2_gen2_0_debug_mem_slave_waitrequest
 	signal mm_interconnect_0_nios2_gen2_0_debug_mem_slave_debugaccess      : std_logic;                     -- mm_interconnect_0:nios2_gen2_0_debug_mem_slave_debugaccess -> nios2_gen2_0:debug_mem_slave_debugaccess
@@ -234,9 +256,22 @@ architecture rtl of Qsys_handshake is
 	signal reset_reset_n_ports_inv                                         : std_logic;                     -- reset_reset_n:inv -> rst_controller:reset_in0
 	signal mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read_ports_inv  : std_logic;                     -- mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read:inv -> jtag_uart_0:av_read_n
 	signal mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write_ports_inv : std_logic;                     -- mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write:inv -> jtag_uart_0:av_write_n
-	signal rst_controller_reset_out_reset_ports_inv                        : std_logic;                     -- rst_controller_reset_out_reset:inv -> [jtag_uart_0:rst_n, nios2_gen2_0:reset_n]
+	signal rst_controller_reset_out_reset_ports_inv                        : std_logic;                     -- rst_controller_reset_out_reset:inv -> [handshake_memory_0:Resetn, jtag_uart_0:rst_n, nios2_gen2_0:reset_n]
 
 begin
+
+	handshake_memory_0 : component Qsys_handshake_handshake_memory_0
+		generic map (
+			DATA_WIDTH => 32
+		)
+		port map (
+			Clock       => clk_clk,                                                     --        clock.clk
+			Resetn      => rst_controller_reset_out_reset_ports_inv,                    --   reset_sink.reset_n
+			read        => mm_interconnect_0_handshake_memory_0_avalon_slave_read,      -- avalon_slave.read
+			write       => mm_interconnect_0_handshake_memory_0_avalon_slave_write,     --             .write
+			Input_acel  => mm_interconnect_0_handshake_memory_0_avalon_slave_writedata, --             .writedata
+			Output_acel => mm_interconnect_0_handshake_memory_0_avalon_slave_readdata   --             .readdata
+		);
 
 	jtag_uart_0 : component Qsys_handshake_jtag_uart_0
 		port map (
@@ -313,6 +348,10 @@ begin
 			nios2_gen2_0_instruction_master_waitrequest    => nios2_gen2_0_instruction_master_waitrequest,                 --                                         .waitrequest
 			nios2_gen2_0_instruction_master_read           => nios2_gen2_0_instruction_master_read,                        --                                         .read
 			nios2_gen2_0_instruction_master_readdata       => nios2_gen2_0_instruction_master_readdata,                    --                                         .readdata
+			handshake_memory_0_avalon_slave_write          => mm_interconnect_0_handshake_memory_0_avalon_slave_write,     --          handshake_memory_0_avalon_slave.write
+			handshake_memory_0_avalon_slave_read           => mm_interconnect_0_handshake_memory_0_avalon_slave_read,      --                                         .read
+			handshake_memory_0_avalon_slave_readdata       => mm_interconnect_0_handshake_memory_0_avalon_slave_readdata,  --                                         .readdata
+			handshake_memory_0_avalon_slave_writedata      => mm_interconnect_0_handshake_memory_0_avalon_slave_writedata, --                                         .writedata
 			jtag_uart_0_avalon_jtag_slave_address          => mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_address,     --            jtag_uart_0_avalon_jtag_slave.address
 			jtag_uart_0_avalon_jtag_slave_write            => mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write,       --                                         .write
 			jtag_uart_0_avalon_jtag_slave_read             => mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read,        --                                         .read

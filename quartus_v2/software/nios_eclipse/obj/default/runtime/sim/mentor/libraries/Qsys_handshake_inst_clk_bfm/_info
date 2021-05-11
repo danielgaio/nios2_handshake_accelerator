@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/software/nios_eclipse/obj/default/runtime/sim/mentor
 Ealtera_avalon_clock_source
-Z1 w1620598727
+Z1 w1620700553
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
@@ -21,9 +21,9 @@ VNHkUo40dzYSacMh8GVl8D1
 !s100 X:=]mD_8g=RiSOoP1?_3P1
 Z6 OV;C;10.5b;63
 32
-Z7 !s110 1620598965
+Z7 !s110 1620700702
 !i10b 1
-Z8 !s108 1620598965.000000
+Z8 !s108 1620700702.000000
 Z9 !s90 -reportprogress|300|C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_avalon_clock_source.vhd|-work|Qsys_handshake_inst_clk_bfm|
 Z10 !s107 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_avalon_clock_source.vhd|
 !i113 1
@@ -32,11 +32,11 @@ Z12 tExplicit 1 CvgOpt 0
 Abehavioral
 R2
 R3
-DEx4 work 26 altera_avalon_clock_source 0 22 NHkUo40dzYSacMh8GVl8D1
+Z13 DEx4 work 26 altera_avalon_clock_source 0 22 NHkUo40dzYSacMh8GVl8D1
 l36
 L29
-VNjd[ZIG64d:>`mPP2PLWP1
-!s100 9Z]2V^Qb:4^eK3eXY2mlX3
+Z14 VNjd[ZIG64d:>`mPP2PLWP1
+Z15 !s100 9Z]2V^Qb:4^eK3eXY2mlX3
 R6
 32
 R7

@@ -1,0 +1,128 @@
+Flow report for nios_acel_hand
+Mon May 10 23:07:54 2021
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Mon May 10 23:07:54 2021       ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                      ; nios_acel_hand                              ;
+; Top-level Entity Name              ; My_top                                      ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 1,626 / 6,272 ( 26 % )                      ;
+;     Total combinational functions  ; 1,511 / 6,272 ( 24 % )                      ;
+;     Dedicated logic registers      ; 885 / 6,272 ( 14 % )                        ;
+; Total registers                    ; 885                                         ;
+; Total pins                         ; 2 / 92 ( 2 % )                              ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 44,032 / 276,480 ( 16 % )                   ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
+; Device                             ; EP4CE6E22C6                                 ;
+; Timing Models                      ; Final                                       ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/10/2021 23:06:31 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; nios_acel_hand      ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                             ;
++-------------------------------------+----------------------------------------+----------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value  ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+----------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 167300351220013.162069879103076        ; --             ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                   ; --             ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                 ; <None>         ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --             ; --          ; eda_simulation ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --             ; My_top      ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --             ; My_top      ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --             ; My_top      ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --             ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; My_top                                 ; nios_acel_hand ; --          ; --             ;
++-------------------------------------+----------------------------------------+----------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:01:03     ; 1.0                     ; 4858 MB             ; 00:01:44                           ;
+; Fitter                    ; 00:00:08     ; 1.1                     ; 5427 MB             ; 00:00:10                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4666 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.1                     ; 4763 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4656 MB             ; 00:00:04                           ;
+; Total                     ; 00:01:18     ; --                      ; --                  ; 00:02:02                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-A8JUKD7  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; DESKTOP-A8JUKD7  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-A8JUKD7  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-A8JUKD7  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-A8JUKD7  ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off nios_acel_hand -c nios_acel_hand
+quartus_fit --read_settings_files=off --write_settings_files=off nios_acel_hand -c nios_acel_hand
+quartus_asm --read_settings_files=off --write_settings_files=off nios_acel_hand -c nios_acel_hand
+quartus_sta nios_acel_hand -c nios_acel_hand
+quartus_eda --read_settings_files=off --write_settings_files=off nios_acel_hand -c nios_acel_hand
+
+
+

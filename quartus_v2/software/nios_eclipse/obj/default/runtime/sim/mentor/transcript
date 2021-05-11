@@ -39,16 +39,16 @@
 # [exec] dev_com
 # [exec] com
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:38 on May 09,2021
+# Start time: 23:38:13 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv -work error_adapter_0 
 # -- Compiling module Qsys_handshake_mm_interconnect_0_avalon_st_adapter_error_adapter_0
 # 
 # Top level modules:
 # 	Qsys_handshake_mm_interconnect_0_avalon_st_adapter_error_adapter_0
-# End time: 19:22:38 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:13 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:39 on May 09,2021
+# Start time: 23:38:13 on May 10,2021
 # vcom -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_avalon_st_adapter.vhd -work avalon_st_adapter 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -56,162 +56,162 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Qsys_handshake_mm_interconnect_0_avalon_st_adapter
 # -- Compiling architecture rtl of Qsys_handshake_mm_interconnect_0_avalon_st_adapter
-# End time: 19:22:39 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:14 on May 10,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:39 on May 09,2021
+# Start time: 23:38:14 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_rsp_mux_001.sv -work rsp_mux_001 
 # -- Compiling module Qsys_handshake_mm_interconnect_0_rsp_mux_001
 # 
 # Top level modules:
 # 	Qsys_handshake_mm_interconnect_0_rsp_mux_001
-# End time: 19:22:39 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:14 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:39 on May 09,2021
+# Start time: 23:38:14 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv -work rsp_mux_001 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 19:22:39 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:14 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:39 on May 09,2021
+# Start time: 23:38:14 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_rsp_mux.sv -work rsp_mux 
 # -- Compiling module Qsys_handshake_mm_interconnect_0_rsp_mux
 # 
 # Top level modules:
 # 	Qsys_handshake_mm_interconnect_0_rsp_mux
-# End time: 19:22:39 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:14 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:39 on May 09,2021
+# Start time: 23:38:14 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv -work rsp_mux 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 19:22:39 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:14 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:40 on May 09,2021
+# Start time: 23:38:15 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_rsp_demux.sv -work rsp_demux 
 # -- Compiling module Qsys_handshake_mm_interconnect_0_rsp_demux
 # 
 # Top level modules:
 # 	Qsys_handshake_mm_interconnect_0_rsp_demux
-# End time: 19:22:40 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:15 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:40 on May 09,2021
-# vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux_001.sv -work cmd_mux_001 
-# -- Compiling module Qsys_handshake_mm_interconnect_0_cmd_mux_001
+# Start time: 23:38:15 on May 10,2021
+# vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux_002.sv -work cmd_mux_002 
+# -- Compiling module Qsys_handshake_mm_interconnect_0_cmd_mux_002
 # 
 # Top level modules:
-# 	Qsys_handshake_mm_interconnect_0_cmd_mux_001
-# End time: 19:22:40 on May 09,2021, Elapsed time: 0:00:00
+# 	Qsys_handshake_mm_interconnect_0_cmd_mux_002
+# End time: 23:38:15 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:40 on May 09,2021
-# vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux_001 
+# Start time: 23:38:15 on May 10,2021
+# vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux_002 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 19:22:40 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:15 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:40 on May 09,2021
+# Start time: 23:38:15 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_mux.sv -work cmd_mux 
 # -- Compiling module Qsys_handshake_mm_interconnect_0_cmd_mux
 # 
 # Top level modules:
 # 	Qsys_handshake_mm_interconnect_0_cmd_mux
-# End time: 19:22:40 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:15 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:40 on May 09,2021
+# Start time: 23:38:15 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv -work cmd_mux 
 # -- Compiling module altera_merlin_arbitrator
 # -- Compiling module altera_merlin_arb_adder
 # 
 # Top level modules:
 # 	altera_merlin_arbitrator
-# End time: 19:22:40 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:16 on May 10,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:40 on May 09,2021
+# Start time: 23:38:16 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_demux_001.sv -work cmd_demux_001 
 # -- Compiling module Qsys_handshake_mm_interconnect_0_cmd_demux_001
 # 
 # Top level modules:
 # 	Qsys_handshake_mm_interconnect_0_cmd_demux_001
-# End time: 19:22:40 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:16 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:40 on May 09,2021
+# Start time: 23:38:16 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_cmd_demux.sv -work cmd_demux 
 # -- Compiling module Qsys_handshake_mm_interconnect_0_cmd_demux
 # 
 # Top level modules:
 # 	Qsys_handshake_mm_interconnect_0_cmd_demux
-# End time: 19:22:40 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:16 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:41 on May 09,2021
-# vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_router_003.sv -work router_003 
-# -- Compiling module Qsys_handshake_mm_interconnect_0_router_003_default_decode
-# -- Compiling module Qsys_handshake_mm_interconnect_0_router_003
+# Start time: 23:38:16 on May 10,2021
+# vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_router_004.sv -work router_004 
+# -- Compiling module Qsys_handshake_mm_interconnect_0_router_004_default_decode
+# -- Compiling module Qsys_handshake_mm_interconnect_0_router_004
 # 
 # Top level modules:
-# 	Qsys_handshake_mm_interconnect_0_router_003
-# End time: 19:22:41 on May 09,2021, Elapsed time: 0:00:00
+# 	Qsys_handshake_mm_interconnect_0_router_004
+# End time: 23:38:16 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:42 on May 09,2021
+# Start time: 23:38:16 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_router_002.sv -work router_002 
 # -- Compiling module Qsys_handshake_mm_interconnect_0_router_002_default_decode
 # -- Compiling module Qsys_handshake_mm_interconnect_0_router_002
 # 
 # Top level modules:
 # 	Qsys_handshake_mm_interconnect_0_router_002
-# End time: 19:22:42 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:16 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:42 on May 09,2021
+# Start time: 23:38:17 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_router_001.sv -work router_001 
 # -- Compiling module Qsys_handshake_mm_interconnect_0_router_001_default_decode
 # -- Compiling module Qsys_handshake_mm_interconnect_0_router_001
 # 
 # Top level modules:
 # 	Qsys_handshake_mm_interconnect_0_router_001
-# End time: 19:22:42 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:17 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:42 on May 09,2021
+# Start time: 23:38:17 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0_router.sv -work router 
 # -- Compiling module Qsys_handshake_mm_interconnect_0_router_default_decode
 # -- Compiling module Qsys_handshake_mm_interconnect_0_router
 # 
 # Top level modules:
 # 	Qsys_handshake_mm_interconnect_0_router
-# End time: 19:22:42 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:17 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:42 on May 09,2021
+# Start time: 23:38:17 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_avalon_sc_fifo.v -work jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo 
 # -- Compiling module altera_avalon_sc_fifo
 # 
 # Top level modules:
 # 	altera_avalon_sc_fifo
-# End time: 19:22:42 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:17 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:42 on May 09,2021
+# Start time: 23:38:17 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_slave_agent.sv -work jtag_uart_0_avalon_jtag_slave_agent 
 # -- Compiling module altera_merlin_slave_agent
 # ** Warning: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
@@ -227,46 +227,46 @@
 # 
 # Top level modules:
 # 	altera_merlin_slave_agent
-# End time: 19:22:42 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:17 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 6
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:43 on May 09,2021
+# Start time: 23:38:17 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_burst_uncompressor.sv -work jtag_uart_0_avalon_jtag_slave_agent 
 # -- Compiling module altera_merlin_burst_uncompressor
 # 
 # Top level modules:
 # 	altera_merlin_burst_uncompressor
-# End time: 19:22:43 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:18 on May 10,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:43 on May 09,2021
+# Start time: 23:38:18 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_master_agent.sv -work nios2_gen2_0_data_master_agent 
 # -- Compiling module altera_merlin_master_agent
 # 
 # Top level modules:
 # 	altera_merlin_master_agent
-# End time: 19:22:43 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:18 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:43 on May 09,2021
+# Start time: 23:38:18 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_slave_translator.sv -work jtag_uart_0_avalon_jtag_slave_translator 
 # -- Compiling module altera_merlin_slave_translator
 # 
 # Top level modules:
 # 	altera_merlin_slave_translator
-# End time: 19:22:43 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:18 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:43 on May 09,2021
+# Start time: 23:38:18 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_master_translator.sv -work nios2_gen2_0_data_master_translator 
 # -- Compiling module altera_merlin_master_translator
 # 
 # Top level modules:
 # 	altera_merlin_master_translator
-# End time: 19:22:43 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:18 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:43 on May 09,2021
+# Start time: 23:38:18 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu.v -work cpu 
 # -- Compiling module Qsys_handshake_nios2_gen2_0_cpu_register_bank_a_module
 # -- Compiling module Qsys_handshake_nios2_gen2_0_cpu_register_bank_b_module
@@ -293,100 +293,100 @@
 # Top level modules:
 # 	Qsys_handshake_nios2_gen2_0_cpu_nios2_performance_monitors
 # 	Qsys_handshake_nios2_gen2_0_cpu
-# End time: 19:22:43 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:19 on May 10,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:43 on May 09,2021
+# Start time: 23:38:19 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_sysclk.v -work cpu 
 # -- Compiling module Qsys_handshake_nios2_gen2_0_cpu_debug_slave_sysclk
 # 
 # Top level modules:
 # 	Qsys_handshake_nios2_gen2_0_cpu_debug_slave_sysclk
-# End time: 19:22:43 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:19 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:43 on May 09,2021
+# Start time: 23:38:19 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_tck.v -work cpu 
 # -- Compiling module Qsys_handshake_nios2_gen2_0_cpu_debug_slave_tck
 # 
 # Top level modules:
 # 	Qsys_handshake_nios2_gen2_0_cpu_debug_slave_tck
-# End time: 19:22:43 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:19 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:43 on May 09,2021
+# Start time: 23:38:19 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_debug_slave_wrapper.v -work cpu 
 # -- Compiling module Qsys_handshake_nios2_gen2_0_cpu_debug_slave_wrapper
 # 
 # Top level modules:
 # 	Qsys_handshake_nios2_gen2_0_cpu_debug_slave_wrapper
-# End time: 19:22:44 on May 09,2021, Elapsed time: 0:00:01
+# End time: 23:38:19 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:44 on May 09,2021
+# Start time: 23:38:19 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_test_bench.v -work cpu 
 # -- Compiling module Qsys_handshake_nios2_gen2_0_cpu_test_bench
 # 
 # Top level modules:
 # 	Qsys_handshake_nios2_gen2_0_cpu_test_bench
-# End time: 19:22:44 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:19 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:44 on May 09,2021
+# Start time: 23:38:20 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_reset_controller.v -work rst_controller 
 # -- Compiling module altera_reset_controller
 # 
 # Top level modules:
 # 	altera_reset_controller
-# End time: 19:22:44 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:20 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:44 on May 09,2021
+# Start time: 23:38:20 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_reset_synchronizer.v -work rst_controller 
 # -- Compiling module altera_reset_synchronizer
 # 
 # Top level modules:
 # 	altera_reset_synchronizer
-# End time: 19:22:44 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:20 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:44 on May 09,2021
+# Start time: 23:38:20 on May 10,2021
 # vlog -reportprogress 300 -sv C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_irq_mapper.sv -work irq_mapper 
 # -- Compiling module Qsys_handshake_irq_mapper
 # 
 # Top level modules:
 # 	Qsys_handshake_irq_mapper
-# End time: 19:22:44 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:20 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:44 on May 09,2021
+# Start time: 23:38:20 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_mm_interconnect_0.v -work mm_interconnect_0 
 # -- Compiling module Qsys_handshake_mm_interconnect_0
 # 
 # Top level modules:
 # 	Qsys_handshake_mm_interconnect_0
-# End time: 19:22:44 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:20 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:44 on May 09,2021
+# Start time: 23:38:20 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_onchip_memory2_0.v -work onchip_memory2_0 
 # -- Compiling module Qsys_handshake_onchip_memory2_0
 # 
 # Top level modules:
 # 	Qsys_handshake_onchip_memory2_0
-# End time: 19:22:44 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:20 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:44 on May 09,2021
+# Start time: 23:38:21 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0.v -work nios2_gen2_0 
 # -- Compiling module Qsys_handshake_nios2_gen2_0
 # 
 # Top level modules:
 # 	Qsys_handshake_nios2_gen2_0
-# End time: 19:22:44 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:21 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:44 on May 09,2021
+# Start time: 23:38:21 on May 10,2021
 # vlog -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_jtag_uart_0.v -work jtag_uart_0 
 # -- Compiling module Qsys_handshake_jtag_uart_0_sim_scfifo_w
 # -- Compiling module Qsys_handshake_jtag_uart_0_scfifo_w
@@ -396,30 +396,62 @@
 # 
 # Top level modules:
 # 	Qsys_handshake_jtag_uart_0
-# End time: 19:22:45 on May 09,2021, Elapsed time: 0:00:01
+# End time: 23:38:21 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:45 on May 09,2021
+# Start time: 23:38:21 on May 10,2021
+# vcom -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/memory.vhd -work handshake_memory_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory
+# -- Compiling architecture rtl of memory
+# End time: 23:38:21 on May 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:38:21 on May 10,2021
+# vcom -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/memory_state_machine.vhd -work handshake_memory_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity memory_state_machine
+# -- Compiling architecture rtl of memory_state_machine
+# End time: 23:38:21 on May 10,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:38:21 on May 10,2021
+# vcom -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/memory_top.vhd -work handshake_memory_0 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory_top
+# -- Compiling architecture rtl of memory_top
+# End time: 23:38:22 on May 10,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:38:22 on May 10,2021
 # vcom -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_avalon_reset_source.vhd -work Qsys_handshake_inst_reset_bfm 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity altera_avalon_reset_source
 # -- Compiling architecture behavioral of altera_avalon_reset_source
-# End time: 19:22:45 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:22 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:45 on May 09,2021
+# Start time: 23:38:22 on May 10,2021
 # vcom -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_avalon_clock_source.vhd -work Qsys_handshake_inst_clk_bfm 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity altera_avalon_clock_source
 # -- Compiling architecture behavioral of altera_avalon_clock_source
-# End time: 19:22:45 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:22 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:45 on May 09,2021
+# Start time: 23:38:22 on May 10,2021
 # vcom -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake.vhd -work Qsys_handshake_inst 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -427,10 +459,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Qsys_handshake
 # -- Compiling architecture rtl of Qsys_handshake
-# End time: 19:22:45 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:22 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:22:45 on May 09,2021
+# Start time: 23:38:22 on May 10,2021
 # vcom -reportprogress 300 C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/Qsys_handshake_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -438,17 +470,19 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity Qsys_handshake_tb
 # -- Compiling architecture rtl of Qsys_handshake_tb
-# End time: 19:22:45 on May 09,2021, Elapsed time: 0:00:00
+# End time: 23:38:22 on May 10,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # [exec] elab
-# vsim -t ps -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_001 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_003 -L router_002 -L router_001 -L router -L jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_0_avalon_jtag_slave_agent -L nios2_gen2_0_data_master_agent -L jtag_uart_0_avalon_jtag_slave_translator -L nios2_gen2_0_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L onchip_memory2_0 -L nios2_gen2_0 -L jtag_uart_0 -L Qsys_handshake_inst_reset_bfm -L Qsys_handshake_inst_clk_bfm -L Qsys_handshake_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive Qsys_handshake_tb 
-# Start time: 19:22:46 on May 09,2021
+# vsim -t ps -L work -L work_lib -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_002 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_004 -L router_002 -L router_001 -L router -L jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_0_avalon_jtag_slave_agent -L nios2_gen2_0_data_master_agent -L jtag_uart_0_avalon_jtag_slave_translator -L nios2_gen2_0_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L onchip_memory2_0 -L nios2_gen2_0 -L jtag_uart_0 -L handshake_memory_0 -L Qsys_handshake_inst_reset_bfm -L Qsys_handshake_inst_clk_bfm -L Qsys_handshake_inst -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive Qsys_handshake_tb 
+# Start time: 23:38:23 on May 10,2021
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.qsys_handshake_tb(rtl)
 # Loading Qsys_handshake_inst.qsys_handshake(rtl)
+# ** Warning: (vsim-3473) Component instance "handshake_memory_0 : Qsys_handshake_handshake_memory_0" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /qsys_handshake_tb/qsys_handshake_inst File: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake.vhd
 # Loading jtag_uart_0.Qsys_handshake_jtag_uart_0
 # Loading jtag_uart_0.Qsys_handshake_jtag_uart_0_scfifo_w
 # Loading jtag_uart_0.Qsys_handshake_jtag_uart_0_sim_scfifo_w
@@ -499,14 +533,14 @@
 # Loading router_001.Qsys_handshake_mm_interconnect_0_router_001_default_decode
 # Loading router_002.Qsys_handshake_mm_interconnect_0_router_002
 # Loading router_002.Qsys_handshake_mm_interconnect_0_router_002_default_decode
-# Loading router_003.Qsys_handshake_mm_interconnect_0_router_003
-# Loading router_003.Qsys_handshake_mm_interconnect_0_router_003_default_decode
+# Loading router_004.Qsys_handshake_mm_interconnect_0_router_004
+# Loading router_004.Qsys_handshake_mm_interconnect_0_router_004_default_decode
 # Loading cmd_demux.Qsys_handshake_mm_interconnect_0_cmd_demux
 # Loading cmd_demux_001.Qsys_handshake_mm_interconnect_0_cmd_demux_001
 # Loading cmd_mux.Qsys_handshake_mm_interconnect_0_cmd_mux
-# Loading cmd_mux_001.Qsys_handshake_mm_interconnect_0_cmd_mux_001
-# Loading cmd_mux_001.altera_merlin_arbitrator
-# Loading cmd_mux_001.altera_merlin_arb_adder
+# Loading cmd_mux_002.Qsys_handshake_mm_interconnect_0_cmd_mux_002
+# Loading cmd_mux_002.altera_merlin_arbitrator
+# Loading cmd_mux_002.altera_merlin_arb_adder
 # Loading rsp_demux.Qsys_handshake_mm_interconnect_0_rsp_demux
 # Loading rsp_mux.Qsys_handshake_mm_interconnect_0_rsp_mux
 # Loading rsp_mux.altera_merlin_arbitrator
@@ -599,39 +633,68 @@
 # ** Warning: (vsim-3722) C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_onchip_memory2_0.v(60): [TFMPC] - Missing connection for port 'q_b'.
 # ** Warning: (vsim-3722) C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_onchip_memory2_0.v(60): [TFMPC] - Missing connection for port 'eccstatus'.
 #  
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/clk_clk
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/reset_reset_n
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_data_master_readdata
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_data_master_waitrequest
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_data_master_debugaccess
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_data_master_address
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_data_master_byteenable
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_data_master_read
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_data_master_write
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_data_master_writedata
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_instruction_master_readdata
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_instruction_master_waitrequest
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_instruction_master_address
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_instruction_master_read
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_chipselect
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_readdata
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_waitrequest
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_address
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_writedata
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_handshake_memory_0_avalon_slave_readdata
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_handshake_memory_0_avalon_slave_read
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_handshake_memory_0_avalon_slave_write
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_handshake_memory_0_avalon_slave_writedata
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_nios2_gen2_0_debug_mem_slave_readdata
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_nios2_gen2_0_debug_mem_slave_waitrequest
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_nios2_gen2_0_debug_mem_slave_debugaccess
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_nios2_gen2_0_debug_mem_slave_address
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_nios2_gen2_0_debug_mem_slave_read
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_nios2_gen2_0_debug_mem_slave_byteenable
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_nios2_gen2_0_debug_mem_slave_write
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_nios2_gen2_0_debug_mem_slave_writedata
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_onchip_memory2_0_s1_chipselect
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_onchip_memory2_0_s1_readdata
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_onchip_memory2_0_s1_address
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_onchip_memory2_0_s1_byteenable
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_onchip_memory2_0_s1_write
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_onchip_memory2_0_s1_writedata
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_onchip_memory2_0_s1_clken
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/irq_mapper_receiver0_irq
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_irq_irq
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/rst_controller_reset_out_reset
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/rst_controller_reset_out_reset_req
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0_debug_reset_request_reset
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/reset_reset_n_ports_inv
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_read_ports_inv
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_write_ports_inv
+add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/rst_controller_reset_out_reset_ports_inv
+step
 run
 # Warning: DONT_CARE value for read_during_write_mode_port_a is not supported in Stratix device family, it might cause incorrect behavioural simulation result
 # Time: 0  Instance: qsys_handshake_tb.qsys_handshake_inst.nios2_gen2_0.cpu.the_Qsys_handshake_nios2_gen2_0_cpu_nios2_oci.the_Qsys_handshake_nios2_gen2_0_cpu_nios2_ocimem.Qsys_handshake_nios2_gen2_0_cpu_ociram_sp_ram.the_altsyncram.m_default.altsyncram_inst
 # Warning: DONT_CARE value for read_during_write_mode_port_a is not supported in Stratix device family, it might cause incorrect behavioural simulation result
 # Time: 0  Instance: qsys_handshake_tb.qsys_handshake_inst.onchip_memory2_0.the_altsyncram.m_default.altsyncram_inst
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/clk
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/reset_n
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/reset_req
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/d_address
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/d_byteenable
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/d_read
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/d_readdata
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/d_waitrequest
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/d_write
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/d_writedata
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/debug_mem_slave_debugaccess_to_roms
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/i_address
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/i_read
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/i_readdata
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/i_waitrequest
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/irq
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/debug_reset_request
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/debug_mem_slave_address
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/debug_mem_slave_byteenable
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/debug_mem_slave_debugaccess
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/debug_mem_slave_read
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/debug_mem_slave_readdata
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/debug_mem_slave_waitrequest
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/debug_mem_slave_write
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/debug_mem_slave_writedata
-add wave -position end  sim:/qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/dummy_ci_port
-run
-# Hello from Nios II!
-run
-# End time: 19:26:06 on May 09,2021, Elapsed time: 0:03:20
-# Errors: 0, Warnings: 72
+# Start computing!
+# 142350 ns: WARNING: Qsys_handshake_nios2_gen2_0_cpu_test_bench/av_ld_data_aligned_unfiltered is 'x'
+# 142510 ns: ERROR: Qsys_handshake_nios2_gen2_0_cpu_test_bench/i_address is 'x'
+# ** Note: $stop    : C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_test_bench.v(600)
+#    Time: 142510 ns  Iteration: 1  Instance: /qsys_handshake_tb/qsys_handshake_inst/nios2_gen2_0/cpu/the_Qsys_handshake_nios2_gen2_0_cpu_test_bench
+# Break in Module Qsys_handshake_nios2_gen2_0_cpu_test_bench at C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/Qsys_handshake_nios2_gen2_0_cpu_test_bench.v line 600
+# End time: 23:54:21 on May 10,2021, Elapsed time: 0:15:58
+# Errors: 0, Warnings: 73
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           # End time: 23:38:44 on May 10,2021, Elapsed time: 0:26:22
+# Errors: 2, Warnings: 73

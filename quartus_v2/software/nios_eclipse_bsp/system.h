@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_gen2_0' in SOPC Builder design 'Qsys_handshake'
  * SOPC Builder design path: ../../Qsys_handshake.sopcinfo
  *
- * Generated: Sun May 09 19:17:39 BRT 2021
+ * Generated: Mon May 10 19:41:10 BRT 2021
  */
 
 /*
@@ -136,6 +136,7 @@
 #define __ALTERA_AVALON_JTAG_UART
 #define __ALTERA_AVALON_ONCHIP_MEMORY2
 #define __ALTERA_NIOS2_GEN2
+#define __HANDSHAKE_MEMORY
 
 
 /*
@@ -183,6 +184,20 @@
 #define ALT_MAX_FD 4
 #define ALT_SYS_CLK none
 #define ALT_TIMESTAMP_CLK none
+
+
+/*
+ * handshake_memory_0 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_handshake_memory_0 handshake_memory
+#define HANDSHAKE_MEMORY_0_BASE 0x3008
+#define HANDSHAKE_MEMORY_0_IRQ -1
+#define HANDSHAKE_MEMORY_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define HANDSHAKE_MEMORY_0_NAME "/dev/handshake_memory_0"
+#define HANDSHAKE_MEMORY_0_SPAN 4
+#define HANDSHAKE_MEMORY_0_TYPE "handshake_memory"
 
 
 /*

@@ -1,0 +1,234 @@
+Info: Starting: Create testbench Qsys system
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake.ipx
+Info: qsys-generate C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus_v2\Qsys_handshake.qsys --testbench=SIMPLE --output-directory=C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus_v2 --family="Cyclone IV E" --part=EP4CE10E22A7
+Progress: Loading quartus_v2/Qsys_handshake.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Adding handshake_memory_0 [handshake_memory 1.0]
+Progress: Parameterizing module handshake_memory_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 16.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 16.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 16.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Qsys_handshake.handshake_memory: The SIM_VHDL fileset must specify the top-level module name.
+Info: Qsys_handshake.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Loading IP catalog for testbench.
+Progress: 
+Progress: 
+Progress: 
+Progress: (2) searching C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/root_components.ipx (ipx file)
+Info: Reading index C:\intelfpga_lite\16.1\quartus\sopc_builder\bin\root_components.ipx
+Info: C:\intelfpga_lite\16.1\quartus\sopc_builder\bin\root_components.ipx: Loading now from components.ipx
+Info: Reading index C:\intelfpga_lite\16.1\quartus\sopc_builder\bin\ip_component_categories.ipx
+Info: C:\intelfpga_lite\16.1\quartus\sopc_builder\bin\ip_component_categories.ipx described 0 plugins, 0 paths, in 0,00 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/ip_component_categories.ipx matched 1 files in 0,00 seconds
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/ip/**/* matched 0 files in 0,00 seconds
+Info: Reading index C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus_v2\Qsys_handshake\testbench\Qsys_handshake.ipx
+Progress: Loading quartus_v2/handshake_memory_hw.tcl
+Progress: Loading quartus_v2/Qsys_handshake.qsys
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/* matched 26 files in 0,03 seconds
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/ip/**/* matched 0 files in 0,00 seconds
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/*/* matched 330 files in 0,01 seconds
+Info: C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus_v2\Qsys_handshake\testbench\Qsys_handshake.ipx described 0 plugins, 3 paths, in 0,04 seconds
+Progress: Loading testbench/Qsys_handshake_tb.qsys
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/* matched 12 files in 0,05 seconds
+Info: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/*/* matched 8 files in 0,00 seconds
+Info: C:/Users/danie/.altera.quartus/ip/16.1/**/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/$$QUARTUS_IP_PROJECTDIR/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/$$QUARTUS_IP_USERDIR/* matched 0 files in 0,00 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/$$QUARTUS_IP_GLOBALDIR/* matched 0 files in 0,00 seconds
+Info: Reading index C:\intelfpga_lite\16.1\ip\altera\altera_components.ipx
+Info: C:\intelfpga_lite\16.1\ip\altera\altera_components.ipx described 1974 plugins, 0 paths, in 0,12 seconds
+Info: C:/intelfpga_lite/16.1/ip/**/* matched 140 files in 0,13 seconds
+Info: C:/intelfpga_lite/ip/**/* matched 0 files in 0,00 seconds
+Info: Reading index C:\intelfpga_lite\16.1\quartus\sopc_builder\builtin.ipx
+Info: C:\intelfpga_lite\16.1\quartus\sopc_builder\builtin.ipx described 83 plugins, 0 paths, in 0,01 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/**/* matched 8 files in 0,01 seconds
+Info: Reading index C:\intelfpga_lite\16.1\quartus\common\librarian\factories\index.ipx
+Info: C:\intelfpga_lite\16.1\quartus\common\librarian\factories\index.ipx described 151 plugins, 0 paths, in 0,01 seconds
+Info: C:/intelfpga_lite/16.1/quartus/common/librarian/factories/**/* matched 4 files in 0,01 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/$IP_IPX_PATH matched 1 files in 0,00 seconds
+Info: C:\intelfpga_lite\16.1\quartus\sopc_builder\bin\root_components.ipx described 0 plugins, 13 paths, in 0,20 seconds
+Info: C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/root_components.ipx matched 1 files in 0,20 seconds
+Progress: 
+Progress: 
+Progress: 
+Info: Running script C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/tbgen.tcl
+Info: send_message Info TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: TB_Gen: QSYS Testbench Generator Rev: $Revision: #1 $
+Info: get_module_property NAME
+Info: send_message Info TB_Gen: System design is: Qsys_handshake
+Info: TB_Gen: System design is: Qsys_handshake
+Info: get_interfaces 
+Info: get_connections 
+Info: get_interface_property clk EXPORT_OF
+Info: get_instance_property clk_0 CLASS_NAME
+Info: get_instance_assignment clk_0 testbench.partner.map.clk_in
+Info: get_interface_property reset EXPORT_OF
+Info: get_instance_property clk_0 CLASS_NAME
+Info: get_instance_assignment clk_0 testbench.partner.map.clk_in_reset
+Info: send_message Info TB_Gen: Creating testbench system : Qsys_handshake_tb with clock and reset BFMs
+Info: TB_Gen: Creating testbench system : Qsys_handshake_tb with clock and reset BFMs
+Info: create_system Qsys_handshake_tb
+Info: add_instance Qsys_handshake_inst Qsys_handshake 
+Info: set_use_testbench_naming_pattern true Qsys_handshake
+Info: get_instance_interfaces Qsys_handshake_inst
+Info: get_instance_interface_property Qsys_handshake_inst clk CLASS_NAME
+Info: get_instance_interface_property Qsys_handshake_inst reset CLASS_NAME
+Info: get_instance_interface_property Qsys_handshake_inst clk CLASS_NAME
+Info: send_message Info TB_Gen: clock_sink found: clk
+Info: TB_Gen: clock_sink found: clk
+Info: get_instance_interface_property Qsys_handshake_inst clk CLASS_NAME
+Info: add_instance Qsys_handshake_inst_clk_bfm altera_avalon_clock_source 
+Info: get_instance_property Qsys_handshake_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value Qsys_handshake_inst clk clockRate
+Info: set_instance_parameter_value Qsys_handshake_inst_clk_bfm CLOCK_RATE 50000000.0
+Info: set_instance_parameter_value Qsys_handshake_inst_clk_bfm CLOCK_UNIT 1
+Info: get_instance_property Qsys_handshake_inst_clk_bfm CLASS_NAME
+Info: get_instance_interface_property Qsys_handshake_inst clk CLASS_NAME
+Info: get_instance_interfaces Qsys_handshake_inst_clk_bfm
+Info: get_instance_interface_property Qsys_handshake_inst_clk_bfm clk CLASS_NAME
+Info: add_connection Qsys_handshake_inst_clk_bfm.clk Qsys_handshake_inst.clk
+Info: get_instance_interface_property Qsys_handshake_inst reset CLASS_NAME
+Info: send_message Info TB_Gen: reset_sink found: reset
+Info: TB_Gen: reset_sink found: reset
+Info: get_instance_interface_property Qsys_handshake_inst reset CLASS_NAME
+Info: add_instance Qsys_handshake_inst_reset_bfm altera_avalon_reset_source 
+Info: get_instance_property Qsys_handshake_inst_reset_bfm CLASS_NAME
+Info: get_instance_interface_ports Qsys_handshake_inst reset
+Info: get_instance_interface_port_property Qsys_handshake_inst reset reset_reset_n ROLE
+Info: get_instance_interface_port_property Qsys_handshake_inst reset reset_reset_n ROLE
+Info: set_instance_parameter_value Qsys_handshake_inst_reset_bfm ASSERT_HIGH_RESET 0
+Info: set_instance_parameter_value Qsys_handshake_inst_reset_bfm INITIAL_RESET_CYCLES 50
+Info: get_instance_property Qsys_handshake_inst_reset_bfm CLASS_NAME
+Info: get_instance_interfaces Qsys_handshake_inst_reset_bfm
+Info: get_instance_interface_property Qsys_handshake_inst_reset_bfm reset CLASS_NAME
+Info: get_instance_interface_property Qsys_handshake_inst_reset_bfm clk CLASS_NAME
+Info: get_instance_property Qsys_handshake_inst_reset_bfm CLASS_NAME
+Info: get_instance_interface_parameter_value Qsys_handshake_inst reset associatedClock
+Info: get_instance_interfaces Qsys_handshake_inst_clk_bfm
+Info: get_instance_interface_property Qsys_handshake_inst_clk_bfm clk CLASS_NAME
+Info: send_message Warning TB_Gen: Qsys_handshake_inst_reset_bfm is not associated to any clock; connecting Qsys_handshake_inst_reset_bfm to 'Qsys_handshake_inst_clk_bfm.clk'
+Warning: TB_Gen: Qsys_handshake_inst_reset_bfm is not associated to any clock; connecting Qsys_handshake_inst_reset_bfm to 'Qsys_handshake_inst_clk_bfm.clk'
+Info: add_connection Qsys_handshake_inst_clk_bfm.clk Qsys_handshake_inst_reset_bfm.clk
+Info: get_instance_interface_property Qsys_handshake_inst reset CLASS_NAME
+Info: get_instance_interfaces Qsys_handshake_inst_reset_bfm
+Info: get_instance_interface_property Qsys_handshake_inst_reset_bfm reset CLASS_NAME
+Info: get_instance_interface_property Qsys_handshake_inst_reset_bfm clk CLASS_NAME
+Info: add_connection Qsys_handshake_inst_reset_bfm.reset Qsys_handshake_inst.reset
+Info: send_message Info TB_Gen: Saving testbench system: Qsys_handshake_tb.qsys
+Info: TB_Gen: Saving testbench system: Qsys_handshake_tb.qsys
+Info: save_system Qsys_handshake_tb.qsys
+Info: send_message Info TB_Gen: TBGEN SUCCESSFUL
+Info: TB_Gen: TBGEN SUCCESSFUL
+Info: Testbench system: C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb.qsys
+Info: Done
+Info: qsys-generate C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus_v2\Qsys_handshake.qsys --simulation=VHDL --allow-mixed-language-simulation --testbench=SIMPLE --testbench-simulation=VHDL --allow-mixed-language-testbench-simulation --output-directory=C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus_v2\Qsys_handshake\testbench\Qsys_handshake_tb\simulation --family="Cyclone IV E" --part=EP4CE10E22A7
+Progress: Loading testbench/Qsys_handshake_tb.qsys
+Progress: Reading input file
+Progress: Adding Qsys_handshake_inst [Qsys_handshake 1.0]
+Progress: Parameterizing module Qsys_handshake_inst
+Progress: Adding Qsys_handshake_inst_clk_bfm [altera_avalon_clock_source 16.1]
+Progress: Parameterizing module Qsys_handshake_inst_clk_bfm
+Progress: Adding Qsys_handshake_inst_reset_bfm [altera_avalon_reset_source 16.1]
+Progress: Parameterizing module Qsys_handshake_inst_reset_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Qsys_handshake_tb.Qsys_handshake_inst.handshake_memory: The SIM_VHDL fileset must specify the top-level module name.
+Info: Qsys_handshake_tb.Qsys_handshake_inst.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: Qsys_handshake_tb.Qsys_handshake_inst_clk_bfm: Elaborate: altera_clock_source
+Info: Qsys_handshake_tb.Qsys_handshake_inst_clk_bfm:            $Revision: #1 $
+Info: Qsys_handshake_tb.Qsys_handshake_inst_clk_bfm:            $Date: 2016/08/07 $
+Info: Qsys_handshake_tb.Qsys_handshake_inst_reset_bfm: Elaborate: altera_reset_source
+Info: Qsys_handshake_tb.Qsys_handshake_inst_reset_bfm:            $Revision: #1 $
+Info: Qsys_handshake_tb.Qsys_handshake_inst_reset_bfm:            $Date: 2016/08/07 $
+Info: Qsys_handshake_tb.Qsys_handshake_inst_reset_bfm: Reset is negatively asserted.
+Info: Qsys_handshake_tb: Generating Qsys_handshake_tb "Qsys_handshake_tb" for SIM_VHDL
+Info: Qsys_handshake_inst: "Qsys_handshake_tb" instantiated Qsys_handshake "Qsys_handshake_inst"
+Info: Qsys_handshake_inst_clk_bfm: "Qsys_handshake_tb" instantiated altera_avalon_clock_source "Qsys_handshake_inst_clk_bfm"
+Info: Qsys_handshake_inst_reset_bfm: "Qsys_handshake_tb" instantiated altera_avalon_reset_source "Qsys_handshake_inst_reset_bfm"
+Info: handshake_memory_0: "Qsys_handshake_inst" instantiated handshake_memory "handshake_memory_0"
+Info: jtag_uart_0: Starting RTL generation for module 'Qsys_handshake_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=Qsys_handshake_jtag_uart_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0395_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0395_jtag_uart_0_gen//Qsys_handshake_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0395_jtag_uart_0_gen/  ]
+Info: jtag_uart_0: Done RTL generation for module 'Qsys_handshake_jtag_uart_0'
+Info: jtag_uart_0: "Qsys_handshake_inst" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_gen2_0: "Qsys_handshake_inst" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'Qsys_handshake_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=Qsys_handshake_onchip_memory2_0 --dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0396_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0396_onchip_memory2_0_gen//Qsys_handshake_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0396_onchip_memory2_0_gen/  ]
+Info: onchip_memory2_0: Done RTL generation for module 'Qsys_handshake_onchip_memory2_0'
+Info: onchip_memory2_0: "Qsys_handshake_inst" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "Qsys_handshake_inst" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "Qsys_handshake_inst" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "Qsys_handshake_inst" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'Qsys_handshake_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/16.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/16.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/16.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=Qsys_handshake_nios2_gen2_0_cpu --dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0399_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/16.1/quartus/bin64/ --verilog --config=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0399_cpu_gen//Qsys_handshake_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0399_cpu_gen/  ]
+Info: cpu: # 2021.05.10 23:10:05 (*) Starting Nios II generation
+Info: cpu: # 2021.05.10 23:10:05 (*)   Checking for plaintext license.
+Info: cpu: # 2021.05.10 23:10:06 (*)   Couldn't query license setup in Quartus directory C:/intelFPGA_lite/16.1/quartus/bin64/
+Info: cpu: # 2021.05.10 23:10:06 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2021.05.10 23:10:06 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2021.05.10 23:10:06 (*)   Plaintext license not found.
+Info: cpu: # 2021.05.10 23:10:06 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2021.05.10 23:10:06 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2021.05.10 23:10:06 (*)   Creating all objects for CPU
+Info: cpu: # 2021.05.10 23:10:07 (*)   Creating 'C:/Users/danie/AppData/Local/Temp/alt8757_4143420863405802313.dir/0399_cpu_gen//Qsys_handshake_nios2_gen2_0_cpu_nios2_waves.do'
+Info: cpu: # 2021.05.10 23:10:07 (*)   Generating RTL from CPU objects
+Info: cpu: # 2021.05.10 23:10:07 (*)   Creating plain-text RTL
+Info: cpu: # 2021.05.10 23:10:07 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'Qsys_handshake_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/Qsys_handshake_tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: Qsys_handshake_tb: Done "Qsys_handshake_tb" with 30 modules, 52 files
+Info: qsys-generate succeeded.
+Info: sim-script-gen --spd=C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus_v2\Qsys_handshake_tb.spd --output-directory=C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus_v2\Qsys_handshake_tb.spd --output-directory=C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	29 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/danie/Documents/GitHub/nios2_handshake_accelerator/quartus_v2/Qsys_handshake/testbench/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create testbench Qsys system

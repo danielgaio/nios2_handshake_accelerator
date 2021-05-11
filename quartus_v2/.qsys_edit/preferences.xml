@@ -5,14 +5,15 @@
   <columns>
    <connections preferredWidth="127" />
    <irq preferredWidth="34" />
+   <name preferredWidth="183" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library/Basic Functions,Library/Basic Functions/Bridges and Adaptors/Memory Mapped,Library/Basic Functions/Simulation; Debug and Verification,Project,Library,Library/Basic Functions/Simulation; Debug and Verification/Debug and Performance,Library/Interface Protocols,Library/Interface Protocols/Serial,Library/Basic Functions/Bridges and Adaptors" />
- <window width="2418" height="1318" x="-2409" y="-9" />
+ <library expandedCategories="Library,Project,Library/Basic Functions" />
+ <window width="1920" height="1023" x="2691" y="-655" />
  <generation
    synthesis="VHDL"
    simulation="VHDL"
    testbench_system="SIMPLE"
    testbench_simulation="VHDL" />
+ <hdlexample language="VERILOG" />
 </preferences>

@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>09/05/2021 19:20:34</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1620598834028</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>10/05/2021 23:36:45</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1620700605077</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\danie\Documents\GitHub\nios2_handshake_accelerator\quartus_v2\software\nios_eclipse_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>..\..\Qsys_handshake.sopcinfo</SopcDesignFile>
@@ -909,6 +909,12 @@
                 <addressRange>0x00003000 - 0x00003007</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>handshake_memory_0</slaveDescriptor>
+                <addressRange>0x00003008 - 0x0000300B</addressRange>
+                <addressSpan>4</addressSpan>
+                <attributes/>
         </MemoryMap>
         <LinkerSection>
                 <sectionName>.text</sectionName>
